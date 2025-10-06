@@ -310,9 +310,11 @@ I am able to see the source file directly using less command.
  
 
 But when it comes to the compile file, it will show a prompt to ask if i want see it and this is the output. 
+<img width="766" height="44" alt="less hellow compile ask" src="https://github.com/user-attachments/assets/f018bcec-9f00-4595-99b8-15218e477619" />
 
- 
+<img width="1832" height="780" alt="less hellow compile output" src="https://github.com/user-attachments/assets/0be1420a-b266-4bd0-815c-c18647f58643" />
 
+<img width="802" height="152" alt="less hellow compile" src="https://github.com/user-attachments/assets/b657e72b-5477-4791-8c0e-80110b225f33" />
  
 
  
