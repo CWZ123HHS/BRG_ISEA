@@ -1,12 +1,12 @@
 # Title: CT0388103-35900251-Chai Wei Zhe-AssignmentISEA
 
-## Student Name: Chai Wei Zhe
+### Student Name: Chai Wei Zhe
 
-## Student ID: CT0388103, 35900251
+### Student ID: CT0388103, 35900251
 
-## GitHub Repository Link: https://github.com/CWZ123HHS/BRG_ISEA/blob/main/README.md
+### GitHub Repository Link: https://github.com/CWZ123HHS/BRG_ISEA/blob/main/README.md
 
-## Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
+### Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
 
 
 ==============================================================================
@@ -14,13 +14,7 @@
 ### 1. Introduction
 
 
-This reflection journal is about my learning experience in the course "Introduction to Server Environments and Architectures" (ISEA). 
-
-Throughout the 4 lessons of this course, I was introduced to the foundational concepts in relation to the server infrastructure, deployment models, and the role of servers in supporting web and network-based applications. 
-
-After going through the 4 days of lessons and lab activities, I have gained practical insights and deeper understanding of how server environments operate in real-world scenarios. 
-
-This reflection journal will highlight the lab activities that I have done, challenges faced, and knowledge learnt. 
+This reflection journal is about my learning experience in the course "Introduction to Server Environments and Architectures" (ISEA). Throughout the four lessons of this module, I was introduced to the foundational concepts in relation to the server infrastructure, deployment models, and the role of servers in supporting web and network-based applications. After going through the four days of lessons and lab activities, I have gained practical insights and deeper understanding of how server environments operate in real-world scenarios. This reflection journal will highlight the lab activities that I have done, challenges faced, and knowledge learnt. 
 
 ===========================================================================================
 
@@ -29,8 +23,7 @@ This reflection journal will highlight the lab activities that I have done, chal
 
 **Lab 1a-1 Virtualisation and Linux Setup:**
 
-First, I have installed VMware Workstation Pro. Next, I download the disc image provided, `ubuntu-24.04.3-desktop-amd64.iso`. 
-Use the Ubuntu image for setup, then set name, the rest remains default, click the finish button, the VM will start to set up. 
+First, I have installed VMware Workstation Pro. Next, I download the disc image provided, `ubuntu-24.04.3-desktop-amd64.iso`. Use the Ubuntu image for setup, then set name, the rest remains default, click the finish button, the VM will start to set up. 
 
 <img width="372" height="252" alt="1a VMware WS PRO installed" src="https://github.com/user-attachments/assets/f27cc1ef-0d5a-48fd-993a-214c33ce32b0" />
 
@@ -41,13 +34,12 @@ Use the Ubuntu image for setup, then set name, the rest remains default, click t
 <img width="876" height="748" alt="1a setup" src="https://github.com/user-attachments/assets/748173da-2180-410b-8e00-1e9b29c62fdd" />
 
 
-Once VM is set up, complete ubuntu installation set up process, installation will then proceed and prompted to reboot the system. Then login as the user. 
+Once VM is set up, complete ubuntu installation set up process, installation will then proceed and prompted to reboot the system. Then login as the user.  
 
 <img width="952" height="668" alt="1a ubuntu install" src="https://github.com/user-attachments/assets/78d9e22d-8901-4db6-bd9f-cfe64871b55a" />
 
 
-Input command `sudo apt update` to update the list of available packages. 
-Then I continue to install virtual box guest, `sudo apt install virtualbox-guest-utils virtualbox-guest-x11` to allow better performance when using VM. 
+Input `sudo apt update` to update the list of available packages. Then I continue to install virtual box guest, `sudo apt install virtualbox-guest-utils virtualbox-guest-x11` to allow better performance when using VM. 
 
 
 <img width="886" height="466" alt="1a sudo app update" src="https://github.com/user-attachments/assets/c6fa7ce6-a1ce-461d-a978-b7fc4af3446c" />
@@ -55,27 +47,102 @@ Then I continue to install virtual box guest, `sudo apt install virtualbox-guest
 <img width="1726" height="936" alt="1a install virtual box guest" src="https://github.com/user-attachments/assets/96986138-55f8-4ae9-a936-08bf6952efbe" />
 
 
-Install SSH with`sudo apt install openssh-server –y`, followed by `sudo systemctl start ssh`,`sudo systemctl status ssh` to enable SSH and ensure it is running. 
+Install SSH with`sudo apt install openssh-server –y`, followed by `sudo systemctl start ssh`, `sudo systemctl status ssh` to enable SSH and ensure it is running. 
+
 
 <img width="948" height="372" alt="1a install openssh" src="https://github.com/user-attachments/assets/086b3fbd-c4e8-4188-bd17-aa4986b11318" />
 
 <img width="1248" height="784" alt="1a ssh enable running" src="https://github.com/user-attachments/assets/57a868c9-0668-448d-b464-8231654a77d2" />
 
 
+**Lab 1a-1 reflection:**
 
-When setting up the Linux environment, we were told to use virtualisation software like VirtualBox or VMware Workstation Pro to set up the Ubuntu image. However, the VM could not run properly with VirtualBox. After completing the default setup, I am able to log in to the installation page. Once the settings are configured and installation starts, I then encounter a problem. The installation of Ubuntu starts to lag, then the progress status stops and stays there. The first half of the lesson was just trying to resolve this issue. Then before lunch, I changed to using VMware Workstation Pro instead. The whole process was smooth, Ubuntu managed to install, and I can continue with the lab activities. 
+When setting up the Linux environment, we were told to use virtualisation software like VirtualBox or VMware Workstation Pro to set up the Ubuntu image. I encountered problem with VirtualBox. At the installation of Ubuntu, it starts lagging, then stopped. The first half of the lesson was just trying to resolve this issue. Before lunch, I changed to using VMware Workstation Pro instead. The installation was smooth, and I can continue with the lab activities.  
 
-I have learnt that Virtualisation tools is a type of software that simulates a virtualised environment to run an operating system on a machine-like servers or computers. It can allow things like running Ubuntu Linux in the Windows environment. The environment configured is based on the performance of the physical system, meaning that the maximum output of the environment will not exceed the physical system as they are sharing the same storage. 
+I have learnt that Virtualisation tools is a type of software that simulates a virtualised environment to run an operating system on a machine, like servers or computers. It can allow Linux to run in Windows environment. The environment is configured based on the performance of the physical system, meaning that the maximum output of the environment will not exceed that of the physical system, as they share the same storage.  
 
-If the disk size that I am using has a maximum storage of 600GB, the maximum available size for the current VM will not exceed 600GB unless I upgrade the disk size to a larger one, like installing a larger solid-state drive (SSD). 
+If the disk size that I am using has a maximum storage of 600GB, the maximum available size for the current VM will not exceed 600GB unless I upgrade the disk size to a larger one, like installing a larger solid-state drive.  
 
-There are a few types of virtualisation tools, such as VMware Workstation and VirtualBox: 
+There are a few types of virtualisation tools, such as VMware Workstation and VirtualBox:  
 
-VMware Workstation provides more features as compared to VirtualBox and higher performance.
-VirtualBox, free and open source, supports Windows, Linux, macOS, Solaris.
+	* VMware Workstation provides more features and higher performance.  
 
-After completing this lab, I would say that although I have gotten some hands-on experience in using Ubuntu, my level of understanding and skills are still not up to the standard of where I can say I am confident to using it. I will require more practice and studying in this field to be more familiarised with it. 
+	* VirtualBox, free and open source, supports Windows, Linux, macOS, Solaris.  
 
+After completing this lab, I have gotten some hands-on experience in using Ubuntu, but my level of understanding and skills are still not up to the standard of where I can say I am confident to using it. I need more practice and studying in this field to be more familiarised with it. 
+
+
+
+**Lab 1a-2 Ubuntu Desktop and Command Line Familiarisation:**
+
+**Part 1: Ubuntu Desktop GUI Familiarisation**
+
+For this activity, I start by checking connectivity with Firefox. Used `sudo snap install libreoffice` to install LibreOffice from the terminal. LibreOffice can open with`libreoffice –writer` from the terminal, LibreOffice will be opened, and I can edit and save like using a notepad. `nautilus`, can be used to open the files.  
+
+<img width="1480" height="773" alt="1b firefox online" src="https://github.com/user-attachments/assets/61a29024-78b2-41b6-92f4-b358c063d91d" />
+
+<img width="844" height="198" alt="1b install libreoffice" src="https://github.com/user-attachments/assets/3871ab66-52b4-4c87-9423-c982c40fa7a7" />
+
+<img width="1284" height="585" alt="1b libreoffice save file" src="https://github.com/user-attachments/assets/f4688149-fbb0-4afc-9a5d-ec093404fae4" />
+
+<img width="1092" height="644" alt="1b file manager" src="https://github.com/user-attachments/assets/833d1281-59ed-4185-8571-dbf0bf226302" />
+
+
+**Part 2: CLI Basics and File Operations**
+
+`ps –e`is used to display the information of all the active processes that are running on this system, sorted by PID. 
+
+
+`top` displays system summary information and the list of processes or threads that are currently managed by the Linux kernel. 
+
+
+When `top`is running and I press 1, the display will change. It will now then display the usage for each individual CPU core. 
+
+
+`ls` is used to display the files and subdirectories present in the current working directory. 
+
+
+`ls –la` will display all the files and directories in the current directory in a long format. 
+
+
+
+`ls –alt` will display all the files and directories in the current directory in a long format and sorted by the newest first. 
+
+
+`ls –lah` is like `ls –la`, what it does differently is that it does not show the exact size of the file but convert to human readable format, for example, 4096 has been shortened to 4.0k.  
+
+
+`touch` is used to create an empty file while `gedit` is used to open the file with gedit text editor, allows editing and changes can be saved. In the screenshot below, I created file1 with the `touch file1` and added two short sentences with `gedit file1`. Apart from it, I also created another empty file named `file2`. 
+
+
+
+`nano` will open Nano text editor that allows the file to be edited directly from the terminal. If I want to save the file that is updated using `nano file1` , press ctrl and o together, then press enter to confirm the changes made. 
+
+
+
+`cat` can be used to display the content in the file like how I use for file1 and the empty file2. `less` is used to allow users to view the content of a file, `command | less` allows user to see the output of a command.  
+
+
+`cp file1 copyfile1`makes a copy of file1 and name it copyfile1. `mv ` is used to move the file to another location. 
+
+
+Similarly, I have made a copy of copyfile1 first, then rename it using `mv copyfile1 documents`. Then used `mv copyfile1 /home/cweizhe/Downloads` to move the file into Downloads directory. 
+
+
+Then I use `rm file2` to delete the file. 
+
+
+
+`uname –a` is used to display a summary of all available system information.  
+
+`lsb_release –a` is used to display the available information about the Linux Standard Base. 
+
+
+**Lab 1a-2 reflection:**
+
+From this activity, I would say that Nano is the better file editor as it can be open from the terminal directly for edit and it is more user friendly for beginners. 
+
+Using CLI allows me to be more used to input the commands as Linux uses the terminal to input the commands. 
 
 ### GitHub Usage
 
@@ -84,23 +151,16 @@ GitHub is a cloud-based platform that enables the developers to store, manage, c
 ===========================================================================================
 
 
-3. Linux Services, Permissions, and Bash Scripting 
+### 3. Linux Services, Permissions, and Bash Scripting 
 
-Service Configuration and User Permissions 
-
-Services installed (e.g., NGINX, SSH). 
-
-Permission controls (e.g., chmod, chown, usermod). 
-
-Lessons learned on least privilege and access control. 
-
-Scripting and Automation 
-
-Purpose of your script (e.g., log backup). 
-
-Cron job setup and testing process. 
-
-Reflection on debugging and improvements. 
+*Service Configuration and User Permissions*
+	* Services installed (e.g., NGINX, SSH). 
+	* Permission controls (e.g., chmod, chown, usermod). 
+	* Lessons learned on least privilege and access control. 
+*Scripting and Automation* 
+	* Purpose of your script (e.g., log backup). 
+	* Cron job setup and testing process. 
+	* Reflection on debugging and improvements. 
 
 
 ===========================================================================================
@@ -269,7 +329,6 @@ This experience helps me to have a better understanding of how Linux skills is i
 	* How you would approach future server projects differently. 
 
 
-
 Overall, the lessons of this course are scheduled fast, 2 weekends in a row and there are only 4 days of lessons. It will be tough to understand that much knowledge and going through the lab activities in this period of time. I would need more time to learn and train on using the Linux commands on Ubuntu to be more familiar with it. 
 
 
@@ -284,19 +343,19 @@ In future if I were to approach server projects, I will need to be careful on ea
 
 ### 11. AI Tools Used (if any)
 
-* List any AI tools (ChatGPT, Copilot) used for grammar, scripting help, etc. 
+	* List any AI tools (ChatGPT, Copilot) used for grammar, scripting help, etc. 
 
-* Be honest and specific. 
+	* Be honest and specific. 
 
-===========================================================================================
+============================================================================
 
 **12. Appendix (Add as needed)**
 
 	* Bash scripts 
- * Cron entries 
- * Screenshots 
- * NGINX or service config files 
- * GitHub repo file structure 
+	* Cron entries 
+	* Screenshots 
+	* NGINX or service config files 
+	* GitHub repo file structure 
 
  
 
