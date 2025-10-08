@@ -1,5 +1,5 @@
 
-###### Student Name: Chai Wei Zhe
+### Student Name: Chai Wei Zhe
 
 ### Student ID: CT0388103, 35900251
 
@@ -308,7 +308,7 @@ Using CLI allows me to be more familiar with inputting the commands as Linux use
 
 ### GitHub Usage
 
-GitHub is a cloud-based platform that enables the developers to store, manage, and collaborate on code and projects. In addition, it can also be used as a place to store notes by uploading into GitHub. In GitHub, I have created a public repository that allows anyone to access it.   
+GitHub is a cloud-based platform that enables the developers to store, manage, and collaborate on code and projects. In addition, it can also be used as a place to store notes by uploading into GitHub. In GitHub, I have created a public repository that allows anyone to access it.  It allows changing of text font and size. For example, if I want to change the text to a larger size or smaller size, I can use the hash, #, to change it. By put it at the start of the sentence. The size changes with the number of hashes at the front, with 1 being the highest and 6 the smallest.  
 
 ===========================================================================================
 
@@ -501,6 +501,7 @@ This command `sed -e 's/\s/\n/g' < file.txt | sort | uniq -c | sort -nr | head â
 **Lab 1b-3 reflection:**
 
 The `tree` command can list the files and directories for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
+When using `grep` or `find` to search for the file, I would require the specific location or the keywords to retrieve the precise location of the file and directory. 
 
 ===========================================================================================
 
@@ -553,8 +554,8 @@ From the AWS console, I can go to Billing and Cost Management Home to set up a b
 
 **Lab 2b-1 reflection:**
 
-Compared to local virtualisation, cloud deployment uses pay-as-you-go, which means users only need to pay for the use of resource they have used, security measures are provided by the cloud providers. If instances are left running, the bill will increase for the resources used. 
-
+Compared to local virtualisation, cloud deployment uses pay-as-you-go, which means users only need to pay for the use of resource they have used, security measures are provided by the cloud providers. In addition, there is no need to pay for the physical device as they are provided by the cloud providers. However, if the resources are left running for a long time, the bill will increase for the resources used. 
+The person who created the file or directory is the known as the owner. The owner shares the same types of permissions with the group users and other users. 
 
 **Lab 2b-2: Introduction to Bash Scripting & System Automation:**
 
