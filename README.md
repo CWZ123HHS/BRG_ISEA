@@ -545,9 +545,43 @@ Certbot is a software tool that helps to generate or renew a trusted TLS certifi
 
 In this exercise, I will first ensure that the inbound ports are opened and install Apache2. From the instance summary webpage, I can find the public IP address and use it to access Apache page.  
 
+<img width="1626" height="384" alt="3a set rule" src="https://github.com/user-attachments/assets/114751d2-3661-4f75-a885-ebdebcec8d09" />
+
+<img width="1090" height="554" alt="3a check port open" src="https://github.com/user-attachments/assets/e60b41eb-080e-47eb-8308-5ff80a1ce125" />
+
+<img width="1198" height="274" alt="3a install apache2" src="https://github.com/user-attachments/assets/d466a2b0-cced-441f-93de-14c74cbb3068" />
+
+<img width="1944" height="940" alt="3a public and private ip address" src="https://github.com/user-attachments/assets/620d592b-25d4-4a20-93b4-f07963c3a646" />
+
+<img width="2028" height="1306" alt="3a access apache website http" src="https://github.com/user-attachments/assets/5ce2d695-76fa-407e-87b0-39167bbe1265" />
+
+
 Next, I will register a domain with GoDaddy, create A record that points to the public IP address of the instance, then wait for DNS propagation. Ping test and nslookup are successful.  
 
+<img width="1132" height="742" alt="godaddy domain name purchase" src="https://github.com/user-attachments/assets/028a8f1b-f32e-4fb5-9835-c4d80250e37e" />
+
+<img width="1106" height="574" alt="3a domain name registered" src="https://github.com/user-attachments/assets/da3ce4c7-fbae-429c-a477-43b3cd2e8ac5" />
+
+<img width="1794" height="504" alt="3a A record created" src="https://github.com/user-attachments/assets/a004a6bc-a764-4d01-a516-a299af9211bc" />
+
+<img width="2176" height="846" alt="3a dns propagation check" src="https://github.com/user-attachments/assets/310f7a50-87e9-4b8c-82e8-24a71c9b441d" />
+
+<img width="1336" height="568" alt="3a nslookup after ip add change" src="https://github.com/user-attachments/assets/173a136a-99e2-4366-a281-7eed05369c56" />
+
+<img width="1954" height="626" alt="3a ping after change ip add" src="https://github.com/user-attachments/assets/1f8fa36b-4cd0-436a-b86b-7a361d4e0ca8" />
+
+
 Now, I will install and execute Certbot to generate the certificate for the domain. When the certificate is generated, I can see the certificate at the icon beside the URL of Apache page. 
+
+<img width="1578" height="464" alt="3a cert bot update" src="https://github.com/user-attachments/assets/7fc983b3-3c27-4f8b-a474-7d8aac60f5db" />
+
+<img width="2004" height="980" alt="3a reinstall cert" src="https://github.com/user-attachments/assets/2e4c4092-91fb-4bd7-9e2b-e98a479c46b3" />
+
+<img width="1656" height="564" alt="3a check apache status" src="https://github.com/user-attachments/assets/1eca980a-a86c-49cf-83f2-c604becf3826" />
+
+<img width="832" height="304" alt="3b not secure" src="https://github.com/user-attachments/assets/5e93720e-8f09-4199-b5b5-d32c177ac743" />
+
+<img width="1164" height="1170" alt="3a certificate" src="https://github.com/user-attachments/assets/c07f9f06-38de-4cc5-89ab-b20d61d731d2" />
 
 This is a digital certificate issued by DigiCert to the website, `https://moodleprod.murdoch.edu.au/my/ `. 
 
@@ -572,6 +606,11 @@ If the cloud VM is left running for months, the bill for using the VM will be hi
 
 Enter the website using VM, select Apache and Ubuntu via Snap. Follow the instruction to install Snap and installed a `hello-world` snap to test it. Afterwards I continued to configure the certificate, but the web page remains the same, saying that it is not secure. 
 
+<img width="1058" height="560" alt="3a snap install" src="https://github.com/user-attachments/assets/3d8a44f8-316d-4e74-8b98-b0ce60b5e556" />
+
+<img width="1384" height="826" alt="3b sudo" src="https://github.com/user-attachments/assets/5ceb4282-9ec5-4a20-8eab-94053763389a" />
+
+<img width="832" height="304" alt="3b not secure" src="https://github.com/user-attachments/assets/64878eec-3750-414c-9106-2b61cb377af3" />
 
 
 **Lab 3a-2 reflection:**
