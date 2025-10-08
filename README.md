@@ -490,7 +490,7 @@ This will shown after adding `-C 3` into the command.
 This is the output after using `find -type f -printf '%T+ %p\n' | sort`. 
 <img width="1464" height="1250" alt="image" src="https://github.com/user-attachments/assets/e44caaa1-83ae-4a8e-9df3-d51513c91815" />
 
-This command helps to find the largest text file in the directory ` du -a ./Gutenberg | sort -nr | head`.
+This command helps to find the largest text file in the directory ` du -a ./home/cweizhe/1b-3-Gutenberg | sort -nr | head`.
 <img width="972" height="134" alt="image" src="https://github.com/user-attachments/assets/9d81d7c6-52da-4965-87c7-c7fb24f6dd22" />
 
 This command `sed -e 's/\s/\n/g' < file.txt | sort | uniq -c | sort -nr | head –200` shows the frequency of the words in the file. 
