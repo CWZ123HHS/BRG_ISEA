@@ -440,8 +440,29 @@ Adding users to the sudo group allows the users apart from the owner to have the
 
 First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it with `bunzip2` and `tar –xvf`, three files will be extracted. `ls –l` lists down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename” ` will display the content of the file. I used `find` but nothing shows up. 
 
+<img width="792" height="432" alt="1c downloadzip" src="https://github.com/user-attachments/assets/24038113-5fce-4578-9c06-7046a4ac89e8" />
 
- 
+<img width="916" height="390" alt="1c download zip file" src="https://github.com/user-attachments/assets/cbd9532d-3a7a-48e2-8bf0-9fd2ef91864e" />
+
+<img width="769" height="351" alt="1c after bunzip 1" src="https://github.com/user-attachments/assets/3de69da3-966a-4f7e-9a4d-1e07bbe782f3" />
+
+<img width="868" height="406" alt="1b taf file" src="https://github.com/user-attachments/assets/39e10578-fa0d-46b2-a42d-66efe48af727" />
+
+<img width="738" height="470" alt="1b ls l" src="https://github.com/user-attachments/assets/8c9ee947-0478-4974-a33d-a03a3f349c3a" />
+
+ <img width="620" height="534" alt="1b tree" src="https://github.com/user-attachments/assets/12700c6c-c996-4a2c-865d-02b3e8da026f" />
+
+<img width="676" height="244" alt="1b less" src="https://github.com/user-attachments/assets/5a1996f5-8fcb-4840-b0be-5f3bfad3828c" />
+
+<img width="976" height="96" alt="1b les fr" src="https://github.com/user-attachments/assets/3756664e-35fd-4d9e-abd7-3b5599d0b773" />
+
+<img width="262" height="94" alt="1b moby" src="https://github.com/user-attachments/assets/c12dd10e-198b-4389-8c15-ad305f27f6ef" />
+
+<img width="596" height="136" alt="1b les two" src="https://github.com/user-attachments/assets/8f0ecd8c-1c9b-486c-8429-a657f03e945e" />
+
+<img width="794" height="56" alt="1b find no" src="https://github.com/user-attachments/assets/f2192c72-e97d-4eda-9e8f-c4da857ba990" />
+
+
 **Lab 1b-3 reflection:**
 
 The `tree` command can list the files and directories for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
@@ -460,13 +481,39 @@ The `tree` command can list the files and directories for the user to understand
 
 Before creating a new instance, set up the security group named 'ssh-and-web' and to enable both SSH and HTTP traffic. Select ‘Create Security Group’, name it 'ssh-and-web', the description will be ‘To allow SSH and HTTP traffic’, VPC leave it as default, then add the rule for inbound rules. Create 2 inbound rules, one for SSH and the other for HTTP, put `0.0.0.0` for the CIDR blocks. Then create it. 
 
+<img width="2500" height="460" alt="2b sec location" src="https://github.com/user-attachments/assets/db4f2b06-2517-4557-90c5-870b1073f7e4" />
+
+<img width="2500" height="460" alt="2b sec location" src="https://github.com/user-attachments/assets/7bd6296e-892a-4678-9667-45730e56b04f" />
+
+<img width="1154" height="918" alt="2b sec create" src="https://github.com/user-attachments/assets/b92357cc-2f0e-4dfd-aa12-c49345b82606" />
+
+<img width="2474" height="840" alt="2b create sec rule" src="https://github.com/user-attachments/assets/c2587841-c55a-48a8-86a5-7d14c388d3ce" />
+
+<img width="2084" height="954" alt="2b create sec grp" src="https://github.com/user-attachments/assets/e8f7e04e-62ac-4738-aea0-4df8b90e096b" />
+
 
 When creating a new instance, it requires a name for it, selecting the image that will be used, Ubuntu 20.04, then name the Key Pair as ‘BRG27’, security group choose ‘ssh-and-web'. 
+
+<img width="1708" height="898" alt="2b setup instance" src="https://github.com/user-attachments/assets/7fc0bea3-abd6-4fb0-ae16-74f5fdfaf88b" />
+
+<img width="1446" height="386" alt="2b setup instance key pair" src="https://github.com/user-attachments/assets/5faa4d01-83d7-4c42-8e87-8a75f791b3ae" />
+
+<img width="1478" height="840" alt="2b setup instance sec grp" src="https://github.com/user-attachments/assets/1ea36c02-914b-44d9-a4ca-757901775a57" />
+
+<img width="942" height="112" alt="2b key press" src="https://github.com/user-attachments/assets/96cf5882-5751-4236-9168-666edc197ff4" />
 
 
 **Budget and Cost Monitoring in AWS**
 
 From the AWS console, I can go to Billing and Cost Management Home to set up a budget alert to alert when the charges have reached the limit set. Apart from setting up the budget alert, I can also see what the cost and usage are directly from the AWS console itself. 
+
+<img width="1858" height="782" alt="2b Biling and cost management home" src="https://github.com/user-attachments/assets/aee70144-1527-44a9-b998-5330413230ba" />
+
+<img width="1598" height="1080" alt="2b monthly cost budget template" src="https://github.com/user-attachments/assets/9b51a9f3-9375-4c0a-a3ea-15dbf49d3c28" />
+
+<img width="1950" height="970" alt="2b cost budget setup" src="https://github.com/user-attachments/assets/601a11a6-72bd-4f3f-ace1-92761a0bbbd1" />
+
+<img width="1152" height="696" alt="2b cost and usage" src="https://github.com/user-attachments/assets/6e8a9b22-064b-4f42-a462-cf9adc80a19f" />
 
 
 **Lab 2b-1 reflection:**
@@ -488,18 +535,15 @@ For this lab, I start by creating a script with `touch hello_world.sh`, then use
 
 For `if`, `elif`, `else` and `read`, I used the same file to edit with nano, then add in the updated script. Now, the user will be prompt to input a number and according to the number input by the user, different text will be displayed based on user input. 
 
-<img width="606" height="430" alt="2b scr 2" src="https://github.com/user-attachments/assets/23cb1f09-0c78-4003-ac10-1f5aef5c614c" />
+<img width="738" height="738" alt="2b sys script" src="https://github.com/user-attachments/assets/72b74a99-5410-471f-a67f-076d2a79cf0e" />
 
-<img width="734" height="332" alt="2b scr 2 test" src="https://github.com/user-attachments/assets/a3b66f65-d11b-4beb-8651-24143cad2d42" />
+<img width="718" height="430" alt="2b sys script output" src="https://github.com/user-attachments/assets/bed62bd8-6ffa-49ff-af2c-272546066303" />
 
+Like the previous 2 exercises I start by creating the script with `resource_monitor.sh`, then update codes that will help to retrieve CPU usage, Memory usage, and Disk usage. `free –h` will produce human readable output.   Afterwards, I will set the permission to 777 then execute it, the out will be shon the log. 
 
-Like the previous 2 exercises I start by creating the script with ` resource_monitor.sh`, then update codes that will help to retrieve CPU usage, Memory usage, and Disk usage. `free –h` will produce human readable output.   Afterwards, I will set the permission to 777 then execute it. The log file created is saved at ‘/home/cweizhe’. 
+<img width="808" height="746" alt="image" src="https://github.com/user-attachments/assets/b74f93ee-ca76-4268-beb2-2ac050ce544c" />
 
-<img width="1088" height="800" alt="nano resource file cmd file cpu  of usage" src="https://github.com/user-attachments/assets/5e357966-25e0-4590-816c-f524be4a1bdd" />
-
-<img width="900" height="538" alt="nano resource file cmd file" src="https://github.com/user-attachments/assets/3c4f0051-4c83-496a-9f2f-e193bf93a5ce" />
-
-<img width="750" height="756" alt="output resource" src="https://github.com/user-attachments/assets/b3d3482b-44dc-4bbe-a155-451045c918a5" />
+<img width="834" height="510" alt="image" src="https://github.com/user-attachments/assets/6d90d594-5105-40ac-bb56-416c535970fc" />
 
 
 **Lab 2b-2 reflection:** 
