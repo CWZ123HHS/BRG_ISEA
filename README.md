@@ -66,7 +66,6 @@ If the disk size that I am using has a maximum storage of 600GB, the maximum ava
 There are a few types of virtualisation tools, such as VMware Workstation and VirtualBox:  
 
 	* VMware Workstation provides more features and higher performance.  
-
 	* VirtualBox, free and open source, supports Windows, Linux, macOS, Solaris.  
 
 After completing this lab, I have gotten some hands-on experience in using Ubuntu, but my level of understanding and skills are still not up to the standard of where I can say I am confident to using it. I need more practice and studying in this field to be more familiarised with it. 
