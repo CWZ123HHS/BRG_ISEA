@@ -1,17 +1,17 @@
-Title: CT0388103-35900251-Chai Wei Zhe-AssignmentISEA
+**Title: CT0388103-35900251-Chai Wei Zhe-AssignmentISEA**
 
-Student Name: Chai Wei Zhe 
+**Student Name: Chai Wei Zhe**
 
-Student ID: CT0388103, 35900251 
+**Student ID: CT0388103, 35900251**
 
-GitHub Repository Link: https://github.com/CWZ123HHS/BRG_ISEA/blob/main/README.md 
+**GitHub Repository Link: https://github.com/CWZ123HHS/BRG_ISEA/blob/main/README.md**
 
-Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
+**Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1** 
 
 
 ===========================================================================================
 
-1. Introduction 
+**1. Introduction**
 
 
 This reflection journal is about my learning experience in the course "Introduction to Server Environments and Architectures" (ISEA). 
@@ -25,7 +25,7 @@ This reflection journal will highlight the lab activities that I have done, chal
 ===========================================================================================
 
 
-2. Linux Environment Setup and GitHub Integration
+**2. Linux Environment Setup and GitHub Integration**
 
 Lab 1a-1 Virtualisation and Linux Setup:  
 
