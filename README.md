@@ -1,4 +1,3 @@
-# Title: CT0388103-35900251-Chai Wei Zhe-AssignmentISEA
 
 ### Student Name: Chai Wei Zhe
 
