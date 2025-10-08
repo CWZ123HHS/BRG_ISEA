@@ -9,7 +9,7 @@
 ### Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
 
 
-==============================================================================
+===========================================================================================
 
 ### 1. Introduction
 
@@ -163,6 +163,10 @@ GitHub is a cloud-based platform that enables the developers to store, manage, c
 	* Reflection on debugging and improvements. 
 
 
+Lab 1b-3 reflection: 
+
+`tree` list the files and directory for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
+
 ===========================================================================================
 
 ### 4. Cloud Infrastructure and TCO Analysis
@@ -172,10 +176,68 @@ GitHub is a cloud-based platform that enables the developers to store, manage, c
 	* Steps taken to configure your cloud VM securely. 
 	* Reflection on cloud infrastructure provisioning. 
 
+
+2b-1 Cloud Web Server Deployment with Amazon EC2 
+
+Before creating a new instance, set up the security group named 'ssh-and-web' and to enable both SSH and HTTP traffic. Select ‘Create Security Group’, name it 'ssh-and-web', the description will be ‘To allow SSH and HTTP traffic’, VPC leave it as default, then add the rule for inbound rules. Create 2 inbound rules, one for SSH and the other for HTTP, put `0.0.0.0` for the CIDR blocks. Then create it. 
+
+
+When creating a new instance, it requires a name for it, selecting the image that will be used, Ubuntu 20.04, then name the Key Pair as ‘BRG27’, security group choose ‘ssh-and-web'. 
+
+
+**Budget and Cost Monitoring in AWS**
+
+From the AWS console, I can go to Billing and Cost Management Home to set up a budget alert to alert when the charges have reached the limit set. Apart from setting up the budget alert, I can also see how much cost and usage from AWS console itself. 
+
+
+**Lab 2b-1 reflection:**
+
+Compared to local virtualisation, cloud deployment uses pay-as-you-go, which means users only need to pay for the use of resource they have used, security measures are provided by the cloud providers. If instances are left running, the bill will increase for the resources used. 
+
+
+**Lab 2b-2: Introduction to Bash Scripting & System Automation:**
+
+For this lab, I start by creating a script with `touch hello_world.sh`, then use `nano hello_world.sh` to update the script starting with `#!/bin/bash`, then with `echo “Hello, World!” `. Afterwards, change the permission of the script to make it executable for all the users so I can execute the script with `./hello_world.sh`. 
+
+
+Now, I will use `touch` to create the script, then use nano to edit it. I will then input the required script commands into the file, then save it. Then change the permission of the script so anyone can execute it. 
+
+For `if`, `elif`, `else` and `read`, I used the same file to edit with nano, then add in the updated script. Now, the user will be prompt to input a number and according to the number input by the user, different text will be displayed based on user input. 
+
+
+Like the previous 2 exercises I start by creating the script with ` resource_monitor.sh`, then update codes that will help to retrieve CPU usage, Memory usage, and Disk usage. `free –h` will produce human readable output.   Afterwards, I will set the permission to 777 then execute it. The log file created is saved at ‘/home/cweizhe’. 
+
+
+
+**Lab 2b-2 reflection:** 
+
+In Ubuntu, I have used `mkdir` to create a new directory, `cat` and `less` used to view the contents of a file.  
+
+`chmod 777` is used to set the permission so the file can be read, write and executed by every user.  
+
+The purpose of `#!/bin/bash` is to instruct the operating system on which interpreter should be used to execute the script. When there is an invalid input entered, the script will terminate when it starts to run.  
+
+If I would monitor the network bandwidth in a Bash script, I include `netstat` in it. 
+
+
 *Cost Analysis*
 	* Summary of TCO comparison across providers. 
 	* Criteria considered (cost, flexibility, scalability). 
 	* Your platform recommendation and why. 
+
+
+**Lab 2a-1 Total Cost of Ownership (TCO) Analysis**
+
+TCO means Total Cost of Ownership, which consist of Acquisition cost like the physical hardware, software,  
+
+For this process, we will usually research for 2 or more brands to research and analyse, the result after the we list down price of the things we must consider will be used for our decision making. 
+
+For this scenario, I will be comparing two different brands of printers with an assumption that the printer will be used for 5 years, 750 pages to be printed per week, power on for 40 hours per week. 
+
+We have to consider things like the type and price of the printer, what functions do the printers have, cost of the cartridges, maintenance fee, price of paper, price of cartridges, maintenance fee and etc. 
+
+
+
 
 ===========================================================================================
 	
@@ -192,11 +254,12 @@ GitHub is a cloud-based platform that enables the developers to store, manage, c
 
 Before creating a domain, I must ensure that the inbound ports for port 22, 80 and 443 must be open, and Apache installed. Then I have created a domain name “cweizhe22334455.online” using GoDaddy. I will then set up my A record under the DNS Records using the public IPv4 address that my instance is currently holding. The name will remain as ‘@’. Once the record has been added, it will take a while for DNS records to be in full effect across all servers on the internet.  
 
-Afterwards, I will use `https://www.whatsmydns.net/`to check if the DNS record has been recorded in other cities. If recorded, a tick will be shown. Once the IP address of DNS has been recorded, it can now be pinged from the VM or EC2 instances. 
+Afterwards, I will use `https://www.whatsmydns.net/`to check if the DNS record has been recorded in other cities. If recorded, a tick will be shown. Once the IP address of DNS has been recorded, it can now be pinged from the VM or EC2 instances.  
 
 However, I realised that each time when the instances are on and off, the public IPv4 address of the instance will change. My original IPv4 address changed from `3.107.8.103`to `3.27.217.115`. This means that if I have not applied any service, like a Certbot, that links to the IP address of the instance, I will have to reconfigure A record on the DNS to match the current public IPv4 address. Afterwards, the DNS IP address will be fixed to the domain name. When the IP of instance has refreshed again, there will be a digital certificate linked to the domain name beside the URL. 
 
 Certbot is a software tool that helps to generate or renew a trusted TLS certificate from the Let's Encrypt certificate authority to enable HTTPS on the selected domain. Similarly, myMurdoch Learning website has a digital certificate issued by the company DigiCert. When using Certbot to generate a certificate for the domain, there is a chance that port 80 and port 443 has been forgotten to be open for connections, causing the Certbot failing to generate the certificate. 
+
 
 **Lab 3a-1 Domain, DNS and TLS Certificates with Let's Encrypt**
 
@@ -233,13 +296,9 @@ Enter the website using VM, select Apache and Ubuntu via Snap. Follow the instru
 
 **Lab 3a-2 reflection:**
 
-HTTPS uses the SSL/TLS protocol to encrypt the data transmitted between a user's browser and the website's server. 
+HTTPS uses the SSL/TLS protocol to encrypt the data transmitted between a user's browser and the website's server. The digital certificate is issued by Let's Encrypt. 
 
-The digital certificate is issued by Let's Encrypt. 
-
-My digital certificate is valid for 3 months; it can be renewed by running the Certbot program. 
-
-Users will see security warning messages in their browsers when visiting the domain.
+My digital certificate is valid for 3 months; it can be renewed by running the Certbot program. If digital certificate has expired and not renewed, users will see security warning messages in their browsers when visiting the domain. 
 
 ===========================================================================================
 
@@ -253,26 +312,42 @@ A cron job is a scheduled task that can be used to run a command or script at a 
 
 Automation helps to reduce human intervention to complete repetitive jobs, it also allows resources to be put to use in other areas that require more resources. Automation is important as it can help to handle repetitive tasks and not require human intervention too frequently.   
 
+
+**Lab 3b-1 Bash Backup Scripting, Cron Jobs & Cloud Export:**
+
+First, I will use `cd /home/cweizhe/Documents` to move to the directory, then create test files and directories. Next, I will input the commands into the script created, giving it permission to execute. The new zip folder will be created at `/home/cweizhe`. Afterwards, I entered the cron using `crontab –e` directly and set the time for the script to be executed. 
+
+
+**Lab 3b-1 reflection:**
+
+Absolute path is important for running scripts as it will start the execution of the script from the root until it reaches the designated directory or file. 
+
+Benefits of cloud exporting for backups such as disaster recovery, the data are stored remotely so data can be recovered faster after events like fire, cyberattacks has hit the physical server. (4 Benefits of Using the Cloud for Disaster Recovery, n.d.) It also supports automation for backup, so it does not require the user to backup manually. 
+
+Cron helps to execute the scripts that are created to run automated at a specific time like every day 7 pm, so users will not need to run the script manually every day. 
+
+If the SSH keys are not accepted ahead of time, this means that the SSH keys are either not accepted by the client, or it is not present in the server's authorized_keys file. 
+
 ===========================================================================================
 
 ### 7. Consulting Simulation and Additional Server Service
 
 *Peer Consultation Reflection*
- * Overview of your proposed solution (stack, budget, security). 
- * Feedback received and how you incorporated it. 
+ 	* Overview of your proposed solution (stack, budget, security). 
+	* Feedback received and how you incorporated it. 
 
 *Optional Lab (Your Chosen Service)*
- * Service deployed (e.g., MariaDB, vsftpd, Docker). 
- * Configuration steps and security considerations. 
- * Reflection on learning a new service independently. 
+	* Service deployed (e.g., MariaDB, vsftpd, Docker). 
+	* Configuration steps and security considerations. 
+	* Reflection on learning a new service independently. 
+
+**Lab4a-1 Additional Server Services**
 
 For the additional server service, I have decided to do the research on the `htop` service. `htop` allows users to see all the system processes and determine the cause of the load by each process, like what Task Manager can do for Windows. It can be used to show both processes and their threads by default, and kill processes, which means that it can terminate a program or a task that is running in Linux. (How to Manage Linux Processes With htop, n.d.) 
 
- 
-
 `htop` can be installed on Ubuntu. First, use `sudo apt update`, to update the system, and `sudo apt upgrade`, to install the newest package version. 
-
- <img width="950" height="524" alt="ensure apt updated" src="https://github.com/user-attachments/assets/bbdaf30e-17ec-4530-aeec-31704b8ad8bc" />
+ 
+<img width="950" height="524" alt="ensure apt updated" src="https://github.com/user-attachments/assets/bbdaf30e-17ec-4530-aeec-31704b8ad8bc" />
 
  
 
@@ -283,6 +358,8 @@ Install `htop` using `sudo apt install htop`:
  
 
 Input `htop` in the terminal to use it: 
+
+<img width="574" height="52" alt="htop cmd" src="https://github.com/user-attachments/assets/99e13ccf-3fa5-4f42-8954-341be2de727e" />
 
 <img width="1286" height="774" alt="htop output" src="https://github.com/user-attachments/assets/0101678b-83b7-4eae-bf1c-28eec9bfe57f" />
 
@@ -299,9 +376,10 @@ Input `htop` in the terminal to use it:
 
 | S.No | Problem | Solution |
 |---|---|---|
-| 1 | Unable to start up VM with VirtualBox. | Switch to VMware Workstation. |
-| 2 | Failed to connect public address to domain. | Remove other A records that were added with the Domain name. |
-
+| 1. | Unable to start up VM with VirtualBox. | Switch to VMware Workstation. |
+| 2. | Failed to connect public address to domain. | Remove other A records that were added with the Domain name. |
+| 3. | Failed to encrypt HTTPS on the domain. | Not resolved. |
+| 4. | Cron failed to operate. | Not resolved. |
  
 
 ===========================================================================================
@@ -313,7 +391,6 @@ Input `htop` in the terminal to use it:
 	* How this experience helped build confidence in real-world skills. 
 	* Mention any frameworks referenced (NIST, OWASP, SANS). 
 
- 
 
 These lab series are related to career roles like System Administrator, DevOps Engineer, Linux Engineer as these types of career roles that require a strong foundation on Linux operating system.  
 
@@ -329,16 +406,15 @@ This experience helps me to have a better understanding of how Linux skills is i
 	* How you would approach future server projects differently. 
 
 
-Overall, the lessons of this course are scheduled fast, 2 weekends in a row and there are only 4 days of lessons. It will be tough to understand that much knowledge and going through the lab activities in this period of time. I would need more time to learn and train on using the Linux commands on Ubuntu to be more familiar with it. 
+I feel that the lessons of this course are scheduled fast, four days of lesson in two weekends. It is tough to absorb that much knowledge and going through the lab activities. I would need more time to learn and train on the Linux with Ubuntu to familiarise with it. 
 
+During these four lessons, I have learnt about Linux commands, permission, scripting, understand how to implement TCO to decide on the better equipment, understand how to use Amazon EC2 and Certbot. 
 
-During these 4 lessons, I have learnt how to use the Linux commands, permission, scripting, understand how to implement TCO to decide on the items needed to be bought, understand the how to use Amazon EC2. 
-
-
-In future if I were to approach server projects, I will need to be careful on each step to configure. Mistakes like typo error can cause the entire configuration to fail more easily. It will be hard to trace back to see what the problem is, and more time and resources will be wasted on reconfiguring. I also have understood what the server will be used for to ensure the proper packages and setup to be configured. Overall, interacting with servers needs to be careful in each portion and is best to take note of what was configured. 
+In future if I were to approach server projects, I will be careful on each step of configuration. Mistakes like typo error can cause the configuration to fail more easily. It will be hard to trace back to know cause, more time and resources will be wasted on reconfiguring. I also need to understand what the server will be used for to ensure the proper packages and setup is configured. Overall, interacting with servers needs to be careful in each portion and is best to take note of what was configured. 
 
 
 ===========================================================================================
+
 
 
 ### 11. AI Tools Used (if any)
@@ -347,7 +423,10 @@ In future if I were to approach server projects, I will need to be careful on ea
 
 	* Be honest and specific. 
 
-============================================================================
+Grammarly – For citation in APA style.
+
+===========================================================================================
+
 
 **12. Appendix (Add as needed)**
 
@@ -357,7 +436,21 @@ In future if I were to approach server projects, I will need to be careful on ea
 	* NGINX or service config files 
 	* GitHub repo file structure 
 
- 
+(n.d.). 4 Benefits of Using the Cloud for Disaster Recovery. Arcserve. https://www.arcserve.com/blog/4-benefits-using-cloud-disaster-recovery 
+
+(n.d.). Access-control list. en.wikipedia.org/wiki/Access-control_list. https://en.wikipedia.org/wiki/Access-control_list 
+
+(2025, January 7). Challenge Types - Let's Encrypt Documentation. letsencrypt.org/docs/challenge-types/. https://letsencrypt.org/docs/challenge-types/ 
+
+(n.d.). Cron - Wikipedia. en.wikipedia.org/wiki/Cron. https://en.wikipedia.org/wiki/Cron 
+
+(2025). Critical Linux 'sudo' flaw allows any user to take over the system. https://cybernews.com/security/critical-linux-sudo-flaw-discovered/ 
+
+(n.d.). How to Manage Linux Processes With htop. www.makeuseof.com/htop-linux-process-manage/. https://www.makeuseof.com/htop-linux-process-manage/ 
+
+(n.d.). User Guide — Certbot 5.1.0.dev0 documentation. eff-certbot.readthedocs.io/using.html. https://eff-certbot.readthedocs.io/using.html 
+
+
 
 
 
