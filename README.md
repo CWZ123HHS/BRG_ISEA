@@ -455,7 +455,7 @@ Adding users to the sudo group allows the users apart from the owner to have the
 
 **Lab 1b-3 File Search, Analysis & Archiving in Linux** 
 
-First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it with `bunzip2` and `tar –xvf`, three files will be extracted. `ls –l` lists down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename” ` will display the content of the file. I used `find` but nothing shows up. 
+First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it with `bunzip2` and `tar –xvf`, three files will be extracted. `ls –l` lists down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename” ` will display the content of the file.
 
 <img width="792" height="432" alt="1c downloadzip" src="https://github.com/user-attachments/assets/24038113-5fce-4578-9c06-7046a4ac89e8" />
 
@@ -477,7 +477,24 @@ First, I download the file from LMS in VM and move it to `/home/cweizhe`. After 
 
 <img width="596" height="136" alt="1b les two" src="https://github.com/user-attachments/assets/8f0ecd8c-1c9b-486c-8429-a657f03e945e" />
 
-<img width="794" height="56" alt="1b find no" src="https://github.com/user-attachments/assets/f2192c72-e97d-4eda-9e8f-c4da857ba990" />
+
+I used `find`, the the files with the extension will be shown. When I use `grep` with keywords from each text, the content of each text file will be shown. 
+
+<img width="1086" height="280" alt="image" src="https://github.com/user-attachments/assets/71083869-73e1-4e8f-bf1e-6ac28b5e2295" />
+
+This will shown after adding `-C 3` into the command.
+
+<img width="1128" height="926" alt="image" src="https://github.com/user-attachments/assets/3902cece-1295-4392-bdfd-9649e59b338b" />
+
+
+This is the output after using `find -type f -printf '%T+ %p\n' | sort`. 
+<img width="1464" height="1250" alt="image" src="https://github.com/user-attachments/assets/e44caaa1-83ae-4a8e-9df3-d51513c91815" />
+
+This command helps to find the largest text file in the directory ` du -a ./Gutenberg | sort -nr | head`.
+<img width="972" height="134" alt="image" src="https://github.com/user-attachments/assets/9d81d7c6-52da-4965-87c7-c7fb24f6dd22" />
+
+
+<img width="1224" height="684" alt="image" src="https://github.com/user-attachments/assets/3fd966e4-d52a-4be5-bff6-c282b19016a6" />
 
 
 **Lab 1b-3 reflection:**
