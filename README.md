@@ -478,14 +478,28 @@ Compared to local virtualisation, cloud deployment uses pay-as-you-go, which mea
 
 For this lab, I start by creating a script with `touch hello_world.sh`, then use `nano hello_world.sh` to update the script starting with `#!/bin/bash`, then with `echo “Hello, World!” `. Afterwards, change the permission of the script to make it executable for all the users so I can execute the script with `./hello_world.sh`. 
 
+<img width="564" height="204" alt="2b nano world" src="https://github.com/user-attachments/assets/1d5bfda1-1701-419f-892f-b984af809d2a" />
 
-Now, I will use `touch` to create the script, then use nano to edit it. I will then input the required script commands into the file, then save it. Then change the permission of the script so anyone can execute it. 
+
+<img width="706" height="180" alt="2b create and nano world" src="https://github.com/user-attachments/assets/56384426-52c5-4957-88c8-112c43ac34d0" />
+
+<img width="722" height="218" alt="2b echo hello world" src="https://github.com/user-attachments/assets/cd806ad3-6df1-4092-9e3b-694d14ad38c7" />
+
 
 For `if`, `elif`, `else` and `read`, I used the same file to edit with nano, then add in the updated script. Now, the user will be prompt to input a number and according to the number input by the user, different text will be displayed based on user input. 
+
+<img width="606" height="430" alt="2b scr 2" src="https://github.com/user-attachments/assets/23cb1f09-0c78-4003-ac10-1f5aef5c614c" />
+
+<img width="734" height="332" alt="2b scr 2 test" src="https://github.com/user-attachments/assets/a3b66f65-d11b-4beb-8651-24143cad2d42" />
 
 
 Like the previous 2 exercises I start by creating the script with ` resource_monitor.sh`, then update codes that will help to retrieve CPU usage, Memory usage, and Disk usage. `free –h` will produce human readable output.   Afterwards, I will set the permission to 777 then execute it. The log file created is saved at ‘/home/cweizhe’. 
 
+<img width="1088" height="800" alt="nano resource file cmd file cpu  of usage" src="https://github.com/user-attachments/assets/5e357966-25e0-4590-816c-f524be4a1bdd" />
+
+<img width="900" height="538" alt="nano resource file cmd file" src="https://github.com/user-attachments/assets/3c4f0051-4c83-496a-9f2f-e193bf93a5ce" />
+
+<img width="750" height="756" alt="output resource" src="https://github.com/user-attachments/assets/b3d3482b-44dc-4bbe-a155-451045c918a5" />
 
 
 **Lab 2b-2 reflection:** 
