@@ -102,29 +102,27 @@ Cron job setup and testing process.
 
 Reflection on debugging and improvements. 
 
- 
 
-4. Cloud Infrastructure and TCO Analysis 
+===========================================================================================
 
-Cloud Deployment 
+**4. Cloud Infrastructure and TCO Analysis**
 
-Which platform you used (AWS/Azure/DO). 
+*Cloud Deployment*
 
-Steps taken to configure your cloud VM securely. 
+ * Which platform you used (AWS/Azure/DO). 
+ * Steps taken to configure your cloud VM securely. 
+ * Reflection on cloud infrastructure provisioning. 
 
-Reflection on cloud infrastructure provisioning. 
+*Cost Analysis*
 
-Cost Analysis 
-
-Summary of TCO comparison across providers. 
-
-Criteria considered (cost, flexibility, scalability). 
+ * Summary of TCO comparison across providers. 
+ * Criteria considered (cost, flexibility, scalability). 
 
 Your platform recommendation and why. 
 
- 
-
-5. DNS Setup and SSL Configuration 
+===========================================================================================
+	
+**5. DNS Setup and SSL Configuration**
 
 DNS Management 
 
@@ -146,54 +144,79 @@ Next, I used the this link https://www.whatsmydns.net to check on the dns propag
 HTTPS redirection and security headers. 
 Reflection on the importance of encrypted traffic. 
 
+===========================================================================================
+
+ **$${\color{blue}6. \space Automation \space and \space Cron \space Jobs}$$**
+
+ * Describe cron jobs configured. 
+ * Script improvements and error handling. 
+ * Importance of automation in real-world environments. 
+
+A cron job is a scheduled task that can be used to run a command or script at a specific time, it can be scheduled to run at a selected time or selected day of the week. (Cron - Wikipedia, n.d.) 
+
+Automation helps to reduce human intervention to complete repetitive jobs, it also allows resources to be put to use in other areas that require more resources. Automation is important as it can help to handle repetitive tasks and not require human intervention too frequently.   
+
+===========================================================================================
+
+**$${\color{blue}7. \space Consulting \space Simulation \space and \space Additional \space Server \space Service}$$**
+
+*Peer Consultation Reflection*
+ * Overview of your proposed solution (stack, budget, security). 
+ * Feedback received and how you incorporated it. 
+
+*Optional Lab (Your Chosen Service)*
+ * Service deployed (e.g., MariaDB, vsftpd, Docker). 
+ * Configuration steps and security considerations. 
+ * Reflection on learning a new service independently. 
+
+For the additional server service, I have decided to do the research on the `htop` service. `htop` allows users to see all the system processes and determine the cause of the load by each process, like what Task Manager can do for Windows. It can be used to show both processes and their threads by default, and kill processes, which means that it can terminate a program or a task that is running in Linux. (How to Manage Linux Processes With htop, n.d.) 
+
  
 
-6. Automation and Cron Jobs 
+`htop` can be installed on Ubuntu. First, use `sudo apt update`, to update the system, and `sudo apt upgrade`, to install the newest package version. 
 
-Describe cron jobs configured. 
-Script improvements and error handling. 
-Importance of automation in real-world environments. 
+ <img width="950" height="524" alt="ensure apt updated" src="https://github.com/user-attachments/assets/bbdaf30e-17ec-4530-aeec-31704b8ad8bc" />
 
  
 
-7. Consulting Simulation and Additional Server Service 
+Install `htop` using `sudo apt install htop`: 
 
-Peer Consultation Reflection 
-Overview of your proposed solution (stack, budget, security). 
-Feedback received and how you incorporated it. 
-Optional Lab (Your Chosen Service) 
-Service deployed (e.g., MariaDB, vsftpd, Docker). 
-
-Docker?
-
-Configuration steps and security considerations. 
-Reflection on learning a new service independently. 
+<img width="896" height="542" alt="htop install" src="https://github.com/user-attachments/assets/5f20388d-d33f-4267-98ed-d0fe431cda48" />
 
  
 
-8. Problems Encountered and Solutions 
+Input `htop` in the terminal to use it: 
+
+<img width="1286" height="774" alt="htop output" src="https://github.com/user-attachments/assets/0101678b-83b7-4eae-bf1c-28eec9bfe57f" />
+
+
+ 
+===========================================================================================
+
+ 
+
+**8. Problems Encountered and Solutions**
+
 
 (Create a table or list format.) | Problem | How You Solved It | |——–|——————-| | Example: SSL failure | Opened firewall and EC2 SG ports | 
 
-Unable to start up VM with VirtualBox. 
-
-Switch to VMware Workstation. 
-
-Failed to connect public address to domain. 
-
-Remove other A records that were added with the Domain name. 
+| S.No | Problem | Solution |
+|---|---|---|
+| 1 | Unable to start up VM with VirtualBox. | Switch to VMware Workstation. |
+| 2 | Failed to connect public address to domain. | Remove other A records that were added with the Domain name. |
 
  
 
- 
+===========================================================================================
 
-9. Industry Relevance 
 
-Which career roles this lab series relates to (SysAdmin, DevOps, etc.). 
+**9. Industry Relevance**
 
-How this experience helped build confidence in real-world skills. 
+* Which career roles this lab series relates to (SysAdmin, DevOps, etc.). 
 
-Mention any frameworks referenced (NIST, OWASP, SANS). 
+* How this experience helped build confidence in real-world skills. 
+
+* Mention any frameworks referenced (NIST, OWASP, SANS). 
 
  
 
@@ -201,13 +224,14 @@ These lab series are related to career roles like System Administrator, DevOps E
 
 This experience helps me to have a better understanding of how Linux skills is important and demanding as a real-world skill as many careers in the IT field are related to it. 
 
- 
+===========================================================================================
 
-10. Final Reflection 
 
-1. Summarize your overall learning experience. 
-2. What skills you improved. 
-3. How you would approach future server projects differently. 
+**10. Final Reflection**
+
+	* Summarize your overall learning experience
+	* What skills you improved. 
+	* How you would approach future server projects differently. 
 
 
 
@@ -220,23 +244,24 @@ During these 4 lessons, I have learnt how to use the Linux commands, permission,
 In future if I were to approach server projects, I will need to be careful on each step to configure. Mistakes like typo error can cause the entire configuration to fail more easily. It will be hard to trace back to see what the problem is, and more time and resources will be wasted on reconfiguring. I also have understood what the server will be used for to ensure the proper packages and setup to be configured. Overall, interacting with servers needs to be careful in each portion and is best to take note of what was configured. 
 
 
- 
+===========================================================================================
 
-11. AI Tools Used (if any) 
 
-List any AI tools (ChatGPT, Copilot) used for grammar, scripting help, etc. 
+**11. AI Tools Used (if any)**
 
-Be honest and specific. 
+* List any AI tools (ChatGPT, Copilot) used for grammar, scripting help, etc. 
 
- 
+* Be honest and specific. 
 
-12. Appendix (Add as needed) 
+===========================================================================================
 
-Bash scripts 
-Cron entries 
-Screenshots 
-NGINX or service config files 
-GitHub repo file structure 
+**12. Appendix (Add as needed)**
+
+	* Bash scripts 
+ * Cron entries 
+ * Screenshots 
+ * NGINX or service config files 
+ * GitHub repo file structure 
 
  
 
