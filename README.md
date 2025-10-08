@@ -124,29 +124,70 @@ Your platform recommendation and why.
 	
 **5. DNS Setup and SSL Configuration**
 
-DNS Management 
+*DNS Management*
+ * Domain used and DNS record configuration. 
+ * Tools used to verify DNS propagation. 
 
-Domain used and DNS record configuration. 
+*SSL Certificate with Let’s Encrypt*
 
-Tools used to verify DNS propagation. 
+ * Certbot usage and challenges. 
+ * HTTPS redirection and security headers.
+ * Reflection on the importance of encrypted traffic. 
 
-I have used the website https://www.whatsmydns.net to verify DNS propagation.
+Before creating a domain, I must ensure that the inbound ports for port 22, 80 and 443 must be open, and Apache installed. Then I have created a domain name “cweizhe22334455.online” using GoDaddy. I will then set up my A record under the DNS Records using the public IPv4 address that my instance is currently holding. The name will remain as ‘@’. Once the record has been added, it will take a while for DNS records to be in full effect across all servers on the internet.  
 
-SSL Certificate with Let’s Encrypt 
+Afterwards, I will use `https://www.whatsmydns.net/`to check if the DNS record has been recorded in other cities. If recorded, a tick will be shown. Once the IP address of DNS has been recorded, it can now be pinged from the VM or EC2 instances. 
 
-Certbot usage and challenges. 
+However, I realised that each time when the instances are on and off, the public IPv4 address of the instance will change. My original IPv4 address changed from `3.107.8.103`to `3.27.217.115`. This means that if I have not applied any service, like a Certbot, that links to the IP address of the instance, I will have to reconfigure A record on the DNS to match the current public IPv4 address. Afterwards, the DNS IP address will be fixed to the domain name. When the IP of instance has refreshed again, there will be a digital certificate linked to the domain name beside the URL. 
 
-During the first time I have tried to run the certbot command, the process failed, showing "Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet."
-Then with the help of the lecturer, we manage to find out that it is A record that are named using "cweizhe22334455.online" have caused the problem.
-Therefore, I deleted it and test the certbot again. This time it manage to work.
-Next, I used the this link https://www.whatsmydns.net to check on the dns propagation, most of the cities have successfully recorded but some cities like Mexico City, Diemen and Antalya have failed to record. 
+Certbot is a software tool that helps to generate or renew a trusted TLS certificate from the Let's Encrypt certificate authority to enable HTTPS on the selected domain. Similarly, myMurdoch Learning website has a digital certificate issued by the company DigiCert. When using Certbot to generate a certificate for the domain, there is a chance that port 80 and port 443 has been forgotten to be open for connections, causing the Certbot failing to generate the certificate. 
 
-HTTPS redirection and security headers. 
-Reflection on the importance of encrypted traffic. 
+**Lab 3a-1 Domain, DNS and TLS Certificates with Let's Encrypt**
+
+In this exercise, I will first ensure that the inbound ports are opened and install Apache2. From the instance summary webpage, I can find the public IP address and use it to access Apache page.  
+
+Next, I will register a domain with GoDaddy, create A record that points to the public IP address of the instance, then wait for DNS propagation. Ping test and nslookup are successful.  
+
+Now, I will install and execute Certbot to generate the certificate for the domain. When the certificate is generated, I can see the certificate at the icon beside the URL of Apache page. 
+
+This is a digital certificate issued by DigiCert to the website, `https://moodleprod.murdoch.edu.au/my/ `. 
+
+<img width="1058" height="1116" alt="murdoch web cert" src="https://github.com/user-attachments/assets/cd25299d-a21b-40a0-acc6-b27321d5c5f7" />
+
+
+**Lab 3a-1 reflection**
+
+The role of DNS is to translate the names of the domain into IP addresses for the machine to read. 
+
+DNS propagations take time for the servers at the other side of the world to update the changes of DNS.   
+
+Let’s Encrypt uses Certbot to validate domain ownership. Certbot will generate a unique token that will be added as a TXT record in the domain. Let’s Encrypt then queries the public DNS for the TXT record, which then validates the existence and content of the record. If the record can be found on public DNS servers, ownership is then validated. (User Guide — Certbot 5.1.0.dev0 documentation, n.d.) 
+
+If TLS is not configured, malicious actors can attack the sites and modify the data. 
+
+If the cloud VM is left running for months, the bill for using the VM will be high, the certificate might have expired. 
+
+
+
+**Lab 3a-2 Enabling HTTPS with Let's Encrypt & Certbot**
+
+Enter the website using VM, select Apache and Ubuntu via Snap. Follow the instruction to install Snap and installed a `hello-world` snap to test it. Afterwards I continued to configure the certificate, but the web page remains the same, saying that it is not secure. 
+
+
+
+**Lab 3a-2 reflection:**
+
+HTTPS uses the SSL/TLS protocol to encrypt the data transmitted between a user's browser and the website's server. 
+
+The digital certificate is issued by Let's Encrypt. 
+
+My digital certificate is valid for 3 months; it can be renewed by running the Certbot program. 
+
+Users will see security warning messages in their browsers when visiting the domain.
 
 ===========================================================================================
 
- **$${\color{blue}6. \space Automation \space and \space Cron \space Jobs}$$**
+ **6. Automation and Cron Jobs**
 
  * Describe cron jobs configured. 
  * Script improvements and error handling. 
@@ -158,7 +199,7 @@ Automation helps to reduce human intervention to complete repetitive jobs, it al
 
 ===========================================================================================
 
-**$${\color{blue}7. \space Consulting \space Simulation \space and \space Additional \space Server \space Service}$$**
+**7. Consulting Simulation and Additional Server Service**
 
 *Peer Consultation Reflection*
  * Overview of your proposed solution (stack, budget, security). 
