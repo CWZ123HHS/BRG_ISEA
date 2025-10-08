@@ -126,16 +126,77 @@ When `top`is running and I press 1, the display will change. It will now then di
 `cp file1 copyfile1`makes a copy of file1 and name it copyfile1. `mv ` is used to move the file to another location. 
 
 
-Similarly, I have made a copy of copyfile1 first, then rename it using `mv copyfile1 documents`. Then used `mv copyfile1 /home/cweizhe/Downloads` to move the file into Downloads directory. 
-
-
-Then I use `rm file2` to delete the file. 
+Similarly, I have made a copy of copyfile1 first, then renamed it using `mv copyfile1 documents`. Then I used `mv copyfile1 /home/cweizhe/Downloads` to move the file into the Downloads directory of my VM. Afterwards, I use `rm file2` to delete file2. 
 
 
 
-`uname –a` is used to display a summary of all available system information.  
 
-`lsb_release –a` is used to display the available information about the Linux Standard Base. 
+The command `uname –a` is used to display a summary of all available system information.  While `lsb_release –a` is used to display the available information about the Linux Standard Base. 
+
+
+
+`hostnamectl` show hostname and other system information of the current machine. 
+
+**Part 3: Super User and Permissions** 
+
+`whoami` shows my current username ‘cweizhe’, `sudo whoami` shows username ‘root’. 
+
+
+When I tried to add user with `adduser `, it says that only root user has the privileges to operate this command. So, I continued with `sudo adduser testuser1` to create a new user. 
+
+
+The role of root user is like an administrator that have the highest level of privileges and control within the Linux operating system. It can execute any command, modify any files, changing the permissions or ownership of files and directories, modify user’s permission on the file. It is best to have only one root user. 
+
+**Part 4: Network Configuration and DNS** 
+
+The IP address `8.8.8.8` is the public DNS server of Google. We can ping using both 8.8.8.8 and google.com on the terminal as the IP address is linked to the google.com address. 
+
+
+
+I will use `nano` to open `/etc/hosts` and add the ip address and name it ‘dnsgoogle’ inside. So, when I ping ‘dnsgoogle’, it will ping to ‘8.8.8.8’ directly. 
+
+
+`nslookup` helps to domain's IP address or an IP address's domain name. 
+
+I install the `whois` program with `sudo apt install whois` and check on google domain with `whois google.cpm`. 
+
+**Part 5: System and Hardware Info** 
+
+`lsusb` display the lists of information of the connected USB devices and `lspci` display the detailed information about all PCI buses in the system and the devices connected.  `less /proc/cpuinfo`displays the info of CPU in the terminal. 
+
+
+
+`lsusb > output_of_lsusb` creates a file to input the data of the connect USB devices. Viewing the content of the file with `less` and `cat`. 
+
+
+**Part 6: Software Installation Methods**
+
+To install chrome on Ubuntu, I went to the website and download the deb file, then I install it using the commands in the terminal. 
+
+From the App Center, I will download Discord directly, but there is a pop up that asks for the password for authentication before download can start. After input, Discord is downloaded and installed, the app can used. 
+
+
+I use `sudo apt update` to find the latest package update list for the system. 
+
+The command `sudo apt upgrade` is used to install the newer versions of all packages currently installed on the system that are available for update. 
+
+
+The command `sudo apt install vlc` is used to install the VLC package. 
+
+The command `sudo apt search chrome` is used to find the available packages and descriptions that match the keyword chrome. 
+
+`/etc/apt/sources.list` is used to find the repository where the packages can be found. 
+
+
+Part 7: Compiling from Source (Optional)  
+
+I will install buid essential with `sudo apt install build-essential`. Then create a C file with `touch`, use `cat > hello_world.c << “EOF” ` to write the script, then compile it using `gcc` to make it executable. It can now be executed with `./hello_world_executable`. 
+
+Then, I change the permission of the script so now anyone can read, write and execute the file. I can see the source script directly using the `less hello_world c`. 
+
+
+When it comes to the compile file, it will show a prompt to ask if I want to see it and the output will be a binary file. 
+
 
 
 **Lab 1a-2 reflection:**
@@ -146,8 +207,8 @@ Using CLI allows me to be more used to input the commands as Linux uses the term
 
 ### GitHub Usage
 
-GitHub is a cloud-based platform that enables the developers to store, manage, collaborate on code and other projects. In addition, it can also be used as a place to store notes. In GitHub, I have created a public repository that allows anyone to access it.  
- 
+GitHub is a cloud-based platform that enables the developers to store, manage, and collaborate on code and projects. In addition, it can also be used as a place to store notes by uploading into GitHub. In GitHub, I have created a public repository that allows anyone to access it.   
+
 ===========================================================================================
 
 
@@ -177,8 +238,7 @@ When UFW enables port 80, it allows connections for IPv4 and IPv6 to be availabl
 I created a new user with `sudo adduser testuser`, establish ssh connection using the username and IP address, the username on the terminal will become 'testuser’. This means that I am remotely controlling that user. 
 
 
-I used `wget -w 2 http://www.gutenberg.org/robot/harvest` to download the books from the website. `-w 2` is to set a 2 second delay for each book downloaded. Afterwards I created a new directory ‘book’ and moved the folder `aleph.gutenberg.org` to the directory `books`. Creat the tar with `tar cf books.tar books` then zip it with `bzip2` and unzip using`bunzip`. I can read `books.tar` with ` tar –xvf books.tar` 
-
+Now I use `wget -w 2 http://www.gutenberg.org/robot/harvest` to download the books from the website. `-w 2` is used to set a 2 second delay for each book downloaded. Afterwards I created a new directory named ‘books’ and moved the folder `aleph.gutenberg.org` to the directory `books`. I then create a tar with `tar cf books.tar books` then zip it with `bzip2` and unzip using `bunzip`. I can read `books.tar` with ` tar –xvf books.tar` 
 
 
 
@@ -215,7 +275,7 @@ Then, I changed the permission to 750, removed Mallory from the user group. I wi
 
 Linux uses mainly three permissions, read, write and execute for the owner, group and other users.  
 
-Windows uses Access Control Lists (ACL) controls which user or group have what type of permission for that file or folder. (Access-control list, n.d.)  
+Windows uses Access Control Lists (ACL) controls to specify which user or group has what type of permission for that file or folder. (Access-control list, n.d.)  
 
 `chmod 770` allows the owner and group users to have permission to read, write and execute the file and directory, while other users do not have. `chmod 750` allows the owner to have read, write and execute permission, group users to read and execute, no permission for other users.  
 
@@ -225,11 +285,13 @@ Adding users to the sudo group allows the users apart from the owner to have the
 
 **Lab 1b-3 File Search, Analysis & Archiving in Linux** 
 
-First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it, three files will be extracted. With `tar –xvf``ls –l` list down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename”` will display the content of the file. I used `find` but nothing shows up 
+First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it with `bunzip2` and `tar –xvf`, three files will be extracted. `ls –l` lists down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename” ` will display the content of the file. I used `find` but nothing shows up. 
 
+
+ 
 **Lab 1b-3 reflection:**
 
-`tree` list the files and directory for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
+The `tree` command can list the files and directories for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
 
 ===========================================================================================
 
@@ -251,7 +313,7 @@ When creating a new instance, it requires a name for it, selecting the image tha
 
 **Budget and Cost Monitoring in AWS**
 
-From the AWS console, I can go to Billing and Cost Management Home to set up a budget alert to alert when the charges have reached the limit set. Apart from setting up the budget alert, I can also see how much cost and usage from AWS console itself. 
+From the AWS console, I can go to Billing and Cost Management Home to set up a budget alert to alert when the charges have reached the limit set. Apart from setting up the budget alert, I can also see what the cost and usage are directly from the AWS console itself. 
 
 
 **Lab 2b-1 reflection:**
