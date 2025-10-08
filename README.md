@@ -171,62 +171,134 @@ The command `uname –a` is used to display a summary of all available system in
 
 `whoami` shows my current username ‘cweizhe’, `sudo whoami` shows username ‘root’. 
 
+<img width="596" height="274" alt="1b whoami and sudo cmd" src="https://github.com/user-attachments/assets/187bdfeb-e973-48e4-9050-3f3eb4f36783" />
+
 
 When I tried to add user with `adduser `, it says that only root user has the privileges to operate this command. So, I continued with `sudo adduser testuser1` to create a new user. 
+
+<img width="824" height="332" alt="1b adduser with sudo" src="https://github.com/user-attachments/assets/1cd00d2c-f121-4b29-82fd-994edfc03729" />
 
 
 The role of root user is like an administrator that have the highest level of privileges and control within the Linux operating system. It can execute any command, modify any files, changing the permissions or ownership of files and directories, modify user’s permission on the file. It is best to have only one root user. 
 
 **Part 4: Network Configuration and DNS** 
 
+I have used to identify the private IP. 
+
+<img width="822" height="478" alt="1b ip a cmd" src="https://github.com/user-attachments/assets/81e4bb0f-5683-43ef-babd-ffddd7728f29" />
+
+
 The IP address `8.8.8.8` is the public DNS server of Google. We can ping using both 8.8.8.8 and google.com on the terminal as the IP address is linked to the google.com address. 
 
+<img width="730" height="438" alt="1b ping 8 8 8 8 cmd" src="https://github.com/user-attachments/assets/fca29a43-7eb5-44f4-83c4-de2e0c12b428" />
 
 
 I will use `nano` to open `/etc/hosts` and add the ip address and name it ‘dnsgoogle’ inside. So, when I ping ‘dnsgoogle’, it will ping to ‘8.8.8.8’ directly. 
 
+<img width="830" height="584" alt="1b edit etc google dns ping" src="https://github.com/user-attachments/assets/747ce3df-7a59-4f45-9acf-9d4825a61871" />
 
 `nslookup` helps to domain's IP address or an IP address's domain name. 
 
+<img width="779" height="712" alt="1b nslookup google" src="https://github.com/user-attachments/assets/285e2549-5597-45d5-af0e-697e1824a178" />
+
+
 I install the `whois` program with `sudo apt install whois` and check on google domain with `whois google.cpm`. 
+
+<img width="936" height="506" alt="1b whois install cmd" src="https://github.com/user-attachments/assets/59906ecd-3817-467a-8099-3049bf69cba4" />
+
+<img width="1028" height="558" alt="1b whois google" src="https://github.com/user-attachments/assets/6177684d-c90d-4142-a45c-f4382b23c723" />
+
 
 **Part 5: System and Hardware Info** 
 
 `lsusb` display the lists of information of the connected USB devices and `lspci` display the detailed information about all PCI buses in the system and the devices connected.  `less /proc/cpuinfo`displays the info of CPU in the terminal. 
 
+<img width="1172" height="536" alt="1b lsusb and lspci cmd" src="https://github.com/user-attachments/assets/8dde486a-b0b3-4e7f-a328-3418ddadd84c" />
+
+<img width="1212" height="752" alt="1b less pro cpu info cmd" src="https://github.com/user-attachments/assets/14ddf7e9-337f-464e-9430-06da202d168d" />
+
+<img width="970" height="660" alt="1b system abt image" src="https://github.com/user-attachments/assets/1c936b4c-403c-4411-a40c-d692ca907b1e" />
 
 
 `lsusb > output_of_lsusb` creates a file to input the data of the connect USB devices. Viewing the content of the file with `less` and `cat`. 
+
+<img width="952" height="362" alt="1b lsusb file" src="https://github.com/user-attachments/assets/107b4991-3837-4361-b656-ee020b24aea2" />
+
+<img width="776" height="210" alt="1b lsusb file less output" src="https://github.com/user-attachments/assets/e46e85cd-db7d-4884-b8c8-e6c8e10c22d9" />
+
+<img width="1042" height="514" alt="1b lsusb file cat and rm" src="https://github.com/user-attachments/assets/a3be3419-ff2a-43f7-b02f-e4e895b922c4" />
 
 
 **Part 6: Software Installation Methods**
 
 To install chrome on Ubuntu, I went to the website and download the deb file, then I install it using the commands in the terminal. 
 
+<img width="1134" height="636" alt="1b install chrome download file" src="https://github.com/user-attachments/assets/bce43b0e-2a32-4efe-b2fe-96a762aa061c" />
+
+<img width="1588" height="794" alt="1b install chrome deb file success" src="https://github.com/user-attachments/assets/2df3ac8d-811a-48b5-ae75-cfdd6012dd7f" />
+
+<img width="1152" height="512" alt="1b install chrome success open" src="https://github.com/user-attachments/assets/30f0843d-bc7a-4db5-af44-d5cc2bae6d70" />
+
+
 From the App Center, I will download Discord directly, but there is a pop up that asks for the password for authentication before download can start. After input, Discord is downloaded and installed, the app can used. 
+
+<img width="1234" height="538" alt="1b app center install app" src="https://github.com/user-attachments/assets/91125fb6-383d-4f6f-9931-de8fc89cf825" />
+
+<img width="430" height="382" alt="1b app center install authorization" src="https://github.com/user-attachments/assets/b26fc7ab-0f0c-4ab1-9f15-4a76b5c5d5e1" />
+
+<img width="1000" height="450" alt="1b app center install success" src="https://github.com/user-attachments/assets/b988af7e-6ed8-4e98-93af-d787fcde2584" />
+
+<img width="1304" height="714" alt="1b app center install can run" src="https://github.com/user-attachments/assets/c5e501a2-aa34-49da-a2a8-edd504cf48fd" />
 
 
 I use `sudo apt update` to find the latest package update list for the system. 
 
+<img width="850" height="276" alt="1b sudo app update cmd" src="https://github.com/user-attachments/assets/4df0c845-bf87-4db8-b2cc-8ecad6ce0735" />
+
+
 The command `sudo apt upgrade` is used to install the newer versions of all packages currently installed on the system that are available for update. 
+
+<img width="1138" height="666" alt="1b sudo app upgrade cmd" src="https://github.com/user-attachments/assets/8dba0a6c-3658-4bb2-9ce8-1b261061b7b3" />
 
 
 The command `sudo apt install vlc` is used to install the VLC package. 
 
+<img width="1100" height="794" alt="1b sudo apt install vlc cmd" src="https://github.com/user-attachments/assets/1717f74e-8cc9-4858-861d-9b52456a11af" />
+
+
 The command `sudo apt search chrome` is used to find the available packages and descriptions that match the keyword chrome. 
 
+<img width="944" height="430" alt="1b sudo app search chrome cmd" src="https://github.com/user-attachments/assets/d98569b8-9914-448d-a475-30406af46900" />
+
+
 `/etc/apt/sources.list` is used to find the repository where the packages can be found. 
+
+<img width="824" height="336" alt="1b etc app source cmd" src="https://github.com/user-attachments/assets/71dd807e-99c3-431e-bb83-48a00db29eb1" />
 
 
 Part 7: Compiling from Source (Optional)  
 
 I will install buid essential with `sudo apt install build-essential`. Then create a C file with `touch`, use `cat > hello_world.c << “EOF” ` to write the script, then compile it using `gcc` to make it executable. It can now be executed with `./hello_world_executable`. 
 
+<img width="832" height="776" alt="1b sudo app install build essential" src="https://github.com/user-attachments/assets/7242dde2-e2a2-4c12-abe0-a5013d15e0bf" />
+
+<img width="974" height="622" alt="1b hello world" src="https://github.com/user-attachments/assets/66cb56f4-29a1-4e10-bbea-bb19c93a8c54" />
+
+
 Then, I change the permission of the script so now anyone can read, write and execute the file. I can see the source script directly using the `less hello_world c`. 
+
+<img width="866" height="180" alt="1b hello world permision" src="https://github.com/user-attachments/assets/2e4baa2d-e68d-4aca-8c7a-597282272d52" />
+
+<img width="484" height="228" alt="less hello world" src="https://github.com/user-attachments/assets/28faad7d-4276-45aa-abc9-df7066efc6d5" />
 
 
 When it comes to the compile file, it will show a prompt to ask if I want to see it and the output will be a binary file. 
 
+<img width="766" height="44" alt="less hellow compile ask" src="https://github.com/user-attachments/assets/3719e28d-f094-49c6-b786-d17a5af902ba" />
+
+<img width="1832" height="780" alt="less hellow compile output" src="https://github.com/user-attachments/assets/aaeccef4-9186-43b2-952c-1747861a3cc2" />
+
+<img width="802" height="152" alt="less hellow compile" src="https://github.com/user-attachments/assets/5f496390-d294-4d94-acd5-a635faaf7140" />
 
 
 **Lab 1a-2 reflection:**
@@ -257,26 +329,72 @@ GitHub is a cloud-based platform that enables the developers to store, manage, a
 
 For this activity, I start by installing apache2 using the commands and test that it will open on the browser when the IP address is typed. 
 
+<img width="916" height="564" alt="1b install apache2" src="https://github.com/user-attachments/assets/310f76c1-078c-4f49-8d11-6949c2519a17" />
+
+<img width="956" height="274" alt="1b open apache via ip" src="https://github.com/user-attachments/assets/f3816936-596a-4af2-8755-3a3119b3b119" />
+
+<img width="1148" height="384" alt="1b install openssh" src="https://github.com/user-attachments/assets/8df3af4b-594e-4382-9a60-57a0d97c9e5b" />
+
+<img width="1066" height="328" alt="1b ip a" src="https://github.com/user-attachments/assets/7b5bae65-160a-489e-97c5-7a5a23c79ee5" />
+
+<img width="1404" height="468" alt="1b open apache via another ip" src="https://github.com/user-attachments/assets/4bcac2c4-a605-4590-9cf7-1177309eae7e" />
+
+
 Nano allows user to edit the file on the terminal itself while gedit will show a GUI that allows user to edit and save like using a notepad. 
+
+<img width="660" height="484" alt="1b edit index with nano" src="https://github.com/user-attachments/assets/843e2613-ecce-4596-9c49-67f500b105ed" />
+
+<img width="810" height="318" alt="1b gedit nano" src="https://github.com/user-attachments/assets/21b14f28-39b1-4c5d-a4cf-7235c7fb7c37" />
+
+<img width="904" height="494" alt="1b nmap" src="https://github.com/user-attachments/assets/44a94d95-6d3e-4c39-8824-7066382fc668" />
 
 
 After removing Apache, port 80 will be open and available for other applications to use. Once Apache is reinstalled, port 80 will be configured again. 
 
+<img width="828" height="316" alt="1b remove apache2" src="https://github.com/user-attachments/assets/7161798a-89fb-4967-9230-18a163597036" />
+
+<img width="896" height="472" alt="1b nmap after remove apache2" src="https://github.com/user-attachments/assets/ae13ff95-2c19-4211-9412-008d42382162" />
+
+<img width="862" height="530" alt="1b nmap after reinstall apache" src="https://github.com/user-attachments/assets/0022f887-2f7f-44ff-af6f-ca6d52079ec3" />
 
 When UFW enables port 80, it allows connections for IPv4 and IPv6 to be available. Then I used `ssh 192.168.77.130` to connect with the IP address. Afterwards, ssh connection was successful.   
 
+<img width="762" height="324" alt="1b sudo firewall 80tcp" src="https://github.com/user-attachments/assets/50d9483f-8eb3-407c-b45d-291354362ae1" />
+
+<img width="920" height="662" alt="1b ssh partner ip address" src="https://github.com/user-attachments/assets/a58cfceb-22f3-476a-8153-7dd931eb910b" />
+
+
 I created a new user with `sudo adduser testuser`, establish ssh connection using the username and IP address, the username on the terminal will become 'testuser’. This means that I am remotely controlling that user. 
+
+<img width="920" height="662" alt="1b ssh partner ip address" src="https://github.com/user-attachments/assets/eb6c4361-441c-4c07-8b81-9fc131efc2cf" />
 
 
 Now I use `wget -w 2 http://www.gutenberg.org/robot/harvest` to download the books from the website. `-w 2` is used to set a 2 second delay for each book downloaded. Afterwards I created a new directory named ‘books’ and moved the folder `aleph.gutenberg.org` to the directory `books`. I then create a tar with `tar cf books.tar books` then zip it with `bzip2` and unzip using `bunzip`. I can read `books.tar` with ` tar –xvf books.tar` 
 
+<img width="908" height="104" alt="guten books collection" src="https://github.com/user-attachments/assets/e32cf12a-0bd3-45fe-9e38-0c1fb5c374f7" />
 
+<img width="656" height="62" alt="mkdir books" src="https://github.com/user-attachments/assets/48278b74-3667-438d-bc27-de1b5cb1ac0e" />
+
+<img width="776" height="386" alt="1b bzip files" src="https://github.com/user-attachments/assets/030c63a6-8588-4759-8751-acea6d8653d6" />
+
+<img width="722" height="338" alt="1b bunzip2" src="https://github.com/user-attachments/assets/c0f10b68-1d65-4350-9d8a-e05478e25dd8" />
+
+<img width="710" height="518" alt="1b taf" src="https://github.com/user-attachments/assets/5297f921-02db-4d12-92d3-2ae92d921334" />
 
 
 **Virtual Networking**
 
 First, I will power off the VM so I can clone it. Then I will open both VM together and check their ip address with `ip –a`. Next, I will ping the IP address of ‘Ubuntu-L1’ to the clone, then ping from the clone to ‘Ubuntu-L1’. The result on both VM shows that it is successful. 
 
+<img width="1428" height="926" alt="1b clone" src="https://github.com/user-attachments/assets/57048942-0928-40a6-808d-7a6f988dd89b" />
+
+<img width="984" height="672" alt="1b vm1" src="https://github.com/user-attachments/assets/18844e41-6391-494f-9ecf-ad4f7fb35bf6" />
+
+<img width="946" height="634" alt="1b vm2" src="https://github.com/user-attachments/assets/72ada24c-36f2-4724-9812-bcfcbda7397e" />
+
+<img width="1022" height="522" alt="1b vm1 ping vm2" src="https://github.com/user-attachments/assets/ec3139af-e9a5-4bc6-9165-242462fb9d70" />
+
+<img width="922" height="418" alt="1b vm2 ping vm1" src="https://github.com/user-attachments/assets/7903b66d-80e7-402f-8ca2-e6f348e454c9" />
 
 **Lab 1b-1 reflection:**
 
