@@ -331,13 +331,18 @@ For this activity, I start by installing apache2 using the commands and test tha
 
 <img width="916" height="564" alt="1b install apache2" src="https://github.com/user-attachments/assets/310f76c1-078c-4f49-8d11-6949c2519a17" />
 
+
 <img width="956" height="274" alt="1b open apache via ip" src="https://github.com/user-attachments/assets/f3816936-596a-4af2-8755-3a3119b3b119" />
+
 
 <img width="1148" height="384" alt="1b install openssh" src="https://github.com/user-attachments/assets/8df3af4b-594e-4382-9a60-57a0d97c9e5b" />
 
+
 <img width="1066" height="328" alt="1b ip a" src="https://github.com/user-attachments/assets/7b5bae65-160a-489e-97c5-7a5a23c79ee5" />
 
+
 <img width="1404" height="468" alt="1b open apache via another ip" src="https://github.com/user-attachments/assets/4bcac2c4-a605-4590-9cf7-1177309eae7e" />
+
 
 
 Nano allows user to edit the file on the terminal itself while gedit will show a GUI that allows user to edit and save like using a notepad. 
