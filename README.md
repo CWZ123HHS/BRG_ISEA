@@ -516,6 +516,7 @@ For this scenario, I will be comparing two different brands of printers with an 
 We have to consider things like the type and price of the printer, what functions do the printers have, cost of the cartridges, maintenance fee, price of paper, price of cartridges, maintenance fee and etc. 
 
 
+<img width="1694" height="906" alt="TCO" src="https://github.com/user-attachments/assets/cdf1d13e-ecb5-47a3-b237-935ee22a591f" />
 
 
 ===========================================================================================
@@ -596,6 +597,17 @@ Automation helps to reduce human intervention to complete repetitive jobs, it al
 
 First, I will use `cd /home/cweizhe/Documents` to move to the directory, then create test files and directories. Next, I will input the commands into the script created, giving it permission to execute. The new zip folder will be created at `/home/cweizhe`. Afterwards, I entered the cron using `crontab –e` directly and set the time for the script to be executed. 
 
+<img width="982" height="376" alt="3b testfile" src="https://github.com/user-attachments/assets/6eb02605-bae6-4599-b45a-ac7dbe793fdd" />
+
+<img width="570" height="290" alt="3b nano script" src="https://github.com/user-attachments/assets/dc33b8bb-ea04-4c3b-a50d-3fece6fb17ce" />
+
+<img width="752" height="621" alt="image" src="https://github.com/user-attachments/assets/524032e3-5e4a-454e-83ad-eda92a319889" />
+
+<img width="788" height="60" alt="3b move sc" src="https://github.com/user-attachments/assets/f9c3b26c-2480-402e-82ae-5d4ec8a6562f" />
+
+<img width="636" height="288" alt="3b initial cront" src="https://github.com/user-attachments/assets/f00fd122-845c-43c2-a5b3-c9e0b5e4627d" />
+
+<img width="762" height="572" alt="3b crontab" src="https://github.com/user-attachments/assets/d7824c06-2822-472d-b198-f653f778d211" />
 
 **Lab 3b-1 reflection:**
 
