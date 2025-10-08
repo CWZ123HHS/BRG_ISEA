@@ -493,6 +493,7 @@ This is the output after using `find -type f -printf '%T+ %p\n' | sort`.
 This command helps to find the largest text file in the directory ` du -a ./Gutenberg | sort -nr | head`.
 <img width="972" height="134" alt="image" src="https://github.com/user-attachments/assets/9d81d7c6-52da-4965-87c7-c7fb24f6dd22" />
 
+This command `sed -e 's/\s/\n/g' < file.txt | sort | uniq -c | sort -nr | head –200` shows the frequency of the words in the file. 
 
 <img width="1224" height="684" alt="image" src="https://github.com/user-attachments/assets/3fd966e4-d52a-4be5-bff6-c282b19016a6" />
 
