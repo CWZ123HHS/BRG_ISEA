@@ -302,9 +302,9 @@ When it comes to the compile file, it will show a prompt to ask if I want to see
 
 **Lab 1a-2 reflection:**
 
-From this activity, I would say that Nano is the better file editor as it can be open from the terminal directly for edit and it is more user friendly for beginners. 
+From this activity, I would say that Nano is the better file editor as it can be open from the terminal directly for edit and it is more user friendly for beginners.  
 
-Using CLI allows me to be more used to input the commands as Linux uses the terminal to input the commands. 
+Using CLI allows me to be more familiar with inputting the commands as Linux uses the terminal to input the commands. 
 
 ### GitHub Usage
 
