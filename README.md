@@ -9,9 +9,9 @@
 ## Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
 
 
-===========================================================================================
+==============================================================================
 
-**1. Introduction**
+### 1. Introduction
 
 
 This reflection journal is about my learning experience in the course "Introduction to Server Environments and Architectures" (ISEA). 
@@ -25,9 +25,9 @@ This reflection journal will highlight the lab activities that I have done, chal
 ===========================================================================================
 
 
-**2. Linux Environment Setup and GitHub Integration**
+### 2. Linux Environment Setup and GitHub Integration
 
-Lab 1a-1 Virtualisation and Linux Setup:  
+**Lab 1a-1 Virtualisation and Linux Setup:**
 
 First, I have installed VMware Workstation Pro. Next, I download the disc image provided, `ubuntu-24.04.3-desktop-amd64.iso`. 
 Use the Ubuntu image for setup, then set name, the rest remains default, click the finish button, the VM will start to set up. 
@@ -77,7 +77,7 @@ VirtualBox, free and open source, supports Windows, Linux, macOS, Solaris.
 After completing this lab, I would say that although I have gotten some hands-on experience in using Ubuntu, my level of understanding and skills are still not up to the standard of where I can say I am confident to using it. I will require more practice and studying in this field to be more familiarised with it. 
 
 
-GitHub Usage
+### GitHub Usage
 
 GitHub is a cloud-based platform that enables the developers to store, manage, collaborate on code and other projects. In addition, it can also be used as a place to store notes. In GitHub, I have created a public repository that allows anyone to access it.  
  
@@ -105,34 +105,30 @@ Reflection on debugging and improvements.
 
 ===========================================================================================
 
-**4. Cloud Infrastructure and TCO Analysis**
+### 4. Cloud Infrastructure and TCO Analysis
 
 *Cloud Deployment*
-
- * Which platform you used (AWS/Azure/DO). 
- * Steps taken to configure your cloud VM securely. 
- * Reflection on cloud infrastructure provisioning. 
+	* Which platform you used (AWS/Azure/DO). 
+	* Steps taken to configure your cloud VM securely. 
+	* Reflection on cloud infrastructure provisioning. 
 
 *Cost Analysis*
-
- * Summary of TCO comparison across providers. 
- * Criteria considered (cost, flexibility, scalability). 
-
-Your platform recommendation and why. 
+	* Summary of TCO comparison across providers. 
+	* Criteria considered (cost, flexibility, scalability). 
+	* Your platform recommendation and why. 
 
 ===========================================================================================
 	
-**5. DNS Setup and SSL Configuration**
+### 5. DNS Setup and SSL Configuration
 
 *DNS Management*
- * Domain used and DNS record configuration. 
- * Tools used to verify DNS propagation. 
+ 	* Domain used and DNS record configuration. 
+ 	* Tools used to verify DNS propagation. 
 
 *SSL Certificate with Let’s Encrypt*
-
- * Certbot usage and challenges. 
- * HTTPS redirection and security headers.
- * Reflection on the importance of encrypted traffic. 
+ 	* Certbot usage and challenges. 
+ 	* HTTPS redirection and security headers.
+	* Reflection on the importance of encrypted traffic. 
 
 Before creating a domain, I must ensure that the inbound ports for port 22, 80 and 443 must be open, and Apache installed. Then I have created a domain name “cweizhe22334455.online” using GoDaddy. I will then set up my A record under the DNS Records using the public IPv4 address that my instance is currently holding. The name will remain as ‘@’. Once the record has been added, it will take a while for DNS records to be in full effect across all servers on the internet.  
 
@@ -189,9 +185,9 @@ Users will see security warning messages in their browsers when visiting the dom
 
  **6. Automation and Cron Jobs**
 
- * Describe cron jobs configured. 
- * Script improvements and error handling. 
- * Importance of automation in real-world environments. 
+ 	* Describe cron jobs configured. 
+ 	* Script improvements and error handling. 
+ 	* Importance of automation in real-world environments. 
 
 A cron job is a scheduled task that can be used to run a command or script at a specific time, it can be scheduled to run at a selected time or selected day of the week. (Cron - Wikipedia, n.d.) 
 
@@ -199,7 +195,7 @@ Automation helps to reduce human intervention to complete repetitive jobs, it al
 
 ===========================================================================================
 
-**7. Consulting Simulation and Additional Server Service**
+### 7. Consulting Simulation and Additional Server Service
 
 *Peer Consultation Reflection*
  * Overview of your proposed solution (stack, budget, security). 
@@ -236,7 +232,7 @@ Input `htop` in the terminal to use it:
 
  
 
-**8. Problems Encountered and Solutions**
+### 8. Problems Encountered and Solutions
 
 
 (Create a table or list format.) | Problem | How You Solved It | |——–|——————-| | Example: SSL failure | Opened firewall and EC2 SG ports | 
@@ -251,13 +247,11 @@ Input `htop` in the terminal to use it:
 ===========================================================================================
 
 
-**9. Industry Relevance**
+### 9. Industry Relevance
 
-* Which career roles this lab series relates to (SysAdmin, DevOps, etc.). 
-
-* How this experience helped build confidence in real-world skills. 
-
-* Mention any frameworks referenced (NIST, OWASP, SANS). 
+	* Which career roles this lab series relates to (SysAdmin, DevOps, etc.). 
+	* How this experience helped build confidence in real-world skills. 
+	* Mention any frameworks referenced (NIST, OWASP, SANS). 
 
  
 
@@ -268,7 +262,7 @@ This experience helps me to have a better understanding of how Linux skills is i
 ===========================================================================================
 
 
-**10. Final Reflection**
+### 10. Final Reflection
 
 	* Summarize your overall learning experience
 	* What skills you improved. 
@@ -288,7 +282,7 @@ In future if I were to approach server projects, I will need to be careful on ea
 ===========================================================================================
 
 
-**11. AI Tools Used (if any)**
+### 11. AI Tools Used (if any)
 
 * List any AI tools (ChatGPT, Copilot) used for grammar, scripting help, etc. 
 
