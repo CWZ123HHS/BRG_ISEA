@@ -1,4 +1,4 @@
-Reflective Learning Journal Template – BRG28-ISEA 
+Title: CT0388103-35900251-Chai Wei Zhe-AssignmentISEA
 
 Student Name: Chai Wei Zhe 
 
@@ -6,7 +6,7 @@ Student ID: CT0388103, 35900251
 
 GitHub Repository Link: https://github.com/CWZ123HHS/BRG_ISEA/blob/main/README.md 
 
-Video Walkthrough Link:  
+Video Walkthrough Link: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent%2FVideoUpload&p=true&ga=1 
 
 
 ===========================================================================================
