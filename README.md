@@ -162,8 +162,72 @@ GitHub is a cloud-based platform that enables the developers to store, manage, c
 	* Cron job setup and testing process. 
 	* Reflection on debugging and improvements. 
 
+**Lab 1b-1 Linux Services, SSH, Firewalls & Compression**
 
-Lab 1b-3 reflection: 
+For this activity, I start by installing apache2 using the commands and test that it will open on the browser when the IP address is typed. 
+
+Nano allows user to edit the file on the terminal itself while gedit will show a GUI that allows user to edit and save like using a notepad. 
+
+
+After removing Apache, port 80 will be open and available for other applications to use. Once Apache is reinstalled, port 80 will be configured again. 
+
+
+When UFW enables port 80, it allows connections for IPv4 and IPv6 to be available. Then I used `ssh 192.168.77.130` to connect with the IP address. Afterwards, ssh connection was successful.   
+
+I created a new user with `sudo adduser testuser`, establish ssh connection using the username and IP address, the username on the terminal will become 'testuser’. This means that I am remotely controlling that user. 
+
+
+I used `wget -w 2 http://www.gutenberg.org/robot/harvest` to download the books from the website. `-w 2` is to set a 2 second delay for each book downloaded. Afterwards I created a new directory ‘book’ and moved the folder `aleph.gutenberg.org` to the directory `books`. Creat the tar with `tar cf books.tar books` then zip it with `bzip2` and unzip using`bunzip`. I can read `books.tar` with ` tar –xvf books.tar` 
+
+
+
+
+
+**Virtual Networking**
+
+First, I will power off the VM so I can clone it. Then I will open both VM together and check their ip address with `ip –a`. Next, I will ping the IP address of ‘Ubuntu-L1’ to the clone, then ping from the clone to ‘Ubuntu-L1’. The result on both VM shows that it is successful. 
+
+
+**Lab 1b-1 reflection:**
+
+Firewalls manage the network services by filtering all incoming and outgoing network traffic based on security rules defined. This helps to protect the network from unauthorised personnel to access, malicious software, cyberattacks,  
+
+SSH provides secure connection to the remote host. File compression makes the file easier for storing by removing unwanted data. 
+
+User privilege management grants the necessary permission to prevent misuse, possible cyber-attacks. 
+
+
+**Lab 1b-2 Linux File Permissions and Group Access Control**
+
+I have created three new users, Alice, Bob and Mallory, a group, a directory and 10 test files. I then change the group ownership of the user group, added Alice and Bob into it. Then I set the directory permission to 770, only the owner and users from the group have the permission to read, write and execute the files and directory. 
+
+
+
+Then, I changed the permission to 750, removed Mallory from the user group. I will then test using the 3 users. Alice and Bob have full permission, but Mallory does not. Afterwards, I will delete the directory. 
+
+
+
+
+
+
+
+**Lab 1b-2 reflection:**
+
+Linux uses mainly three permissions, read, write and execute for the owner, group and other users.  
+
+Windows uses Access Control Lists (ACL) controls which user or group have what type of permission for that file or folder. (Access-control list, n.d.)  
+
+`chmod 770` allows the owner and group users to have permission to read, write and execute the file and directory, while other users do not have. `chmod 750` allows the owner to have read, write and execute permission, group users to read and execute, no permission for other users.  
+
+Adding users to the sudo group allows the users apart from the owner to have the same privilege as the owner will cause the security risk of the system to increase. (Critical Linux 'sudo' flaw allows any user to take over the system, 2025)  
+
+ 
+
+**Lab 1b-3 File Search, Analysis & Archiving in Linux** 
+
+First, I download the file from LMS in VM and move it to `/home/cweizhe`. After I extracted it, three files will be extracted. With `tar –xvf``ls –l` list down the file and directories, `tree` will show the content of the directory in a treelike structure, `less “filename”` will display the content of the file. I used `find` but nothing shows up 
+
+**Lab 1b-3 reflection:**
 
 `tree` list the files and directory for the user to understand the locations of the files. Scripting helps to inform the user when unknown data has been detected. 
 
