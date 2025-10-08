@@ -55,6 +55,7 @@ Install SSH with`sudo apt install openssh-server –y`, followed by `sudo system
 <img width="1248" height="784" alt="1a ssh enable running" src="https://github.com/user-attachments/assets/57a868c9-0668-448d-b464-8231654a77d2" />
 
 
+ 
 **Lab 1a-1 reflection:**
 
 When setting up the Linux environment, we were told to use virtualisation software like VirtualBox or VMware Workstation Pro to set up the Ubuntu image. I encountered problem with VirtualBox. At the installation of Ubuntu, it starts lagging, then stopped. The first half of the lesson was just trying to resolve this issue. Before lunch, I changed to using VMware Workstation Pro instead. The installation was smooth, and I can continue with the lab activities.  
@@ -88,54 +89,84 @@ For this activity, I start by checking connectivity with Firefox. Used `sudo sna
 <img width="1092" height="644" alt="1b file manager" src="https://github.com/user-attachments/assets/833d1281-59ed-4185-8571-dbf0bf226302" />
 
 
+
 **Part 2: CLI Basics and File Operations**
 
 `ps –e`is used to display the information of all the active processes that are running on this system, sorted by PID. 
+<img width="630" height="294" alt="1b ps e cmd 2" src="https://github.com/user-attachments/assets/21c3be6b-d1ef-4ed3-a7cf-1ca4640e44b9" />
 
 
 `top` displays system summary information and the list of processes or threads that are currently managed by the Linux kernel. 
+<img width="848" height="384" alt="1b top cmd" src="https://github.com/user-attachments/assets/f5d9d6b7-6740-4359-b05f-4ddf539d69b4" />
 
 
 When `top`is running and I press 1, the display will change. It will now then display the usage for each individual CPU core. 
+<img width="860" height="504" alt="1b top and 1 cmd" src="https://github.com/user-attachments/assets/aa7ced86-aed0-4150-ab55-daa8e15810bc" />
 
 
 `ls` is used to display the files and subdirectories present in the current working directory. 
+<img width="808" height="198" alt="1b ls cmd" src="https://github.com/user-attachments/assets/69eae084-a87f-4965-a6c6-d747a86afa92" />
 
 
 `ls –la` will display all the files and directories in the current directory in a long format. 
+<img width="832" height="722" alt="1b ls la cmd" src="https://github.com/user-attachments/assets/cec92f81-d5fe-4389-861e-7cdc836a0551" />
 
 
 
 `ls –alt` will display all the files and directories in the current directory in a long format and sorted by the newest first. 
+<img width="678" height="288" alt="image" src="https://github.com/user-attachments/assets/fc78ba83-84bd-45c0-80df-9390eef91299" />
 
 
 `ls –lah` is like `ls –la`, what it does differently is that it does not show the exact size of the file but convert to human readable format, for example, 4096 has been shortened to 4.0k.  
 
+<img width="750" height="566" alt="1b ls lah cmd" src="https://github.com/user-attachments/assets/a7c28e30-bab1-4b1e-8790-ed33d62d631f" />
+
 
 `touch` is used to create an empty file while `gedit` is used to open the file with gedit text editor, allows editing and changes can be saved. In the screenshot below, I created file1 with the `touch file1` and added two short sentences with `gedit file1`. Apart from it, I also created another empty file named `file2`. 
 
+<img width="866" height="252" alt="1b touch install gedit" src="https://github.com/user-attachments/assets/e795c0bd-7dbd-44e8-bb4b-379ec3a33fe7" />
+
+<img width="934" height="534" alt="1b gedit success opening file1" src="https://github.com/user-attachments/assets/f8cfea10-7cf2-43e9-8ef3-fa1b3f49efee" />
 
 
-`nano` will open Nano text editor that allows the file to be edited directly from the terminal. If I want to save the file that is updated using `nano file1` , press ctrl and o together, then press enter to confirm the changes made. 
+`nano` will open Nano text editor that allows the file to be edited directly from the terminal. If I want to save the file that is updated using `nano file1`, press ctrl and o together, then press enter to confirm the changes made. 
 
+<img width="814" height="434" alt="1b nano cmd new file" src="https://github.com/user-attachments/assets/ea275680-8cbc-480e-870a-3288503ec7f2" />
+<img width="810" height="418" alt="1b nano cmd" src="https://github.com/user-attachments/assets/9caeff18-fc7c-4415-8d26-3f6fdba67aa1" />
 
 
 `cat` can be used to display the content in the file like how I use for file1 and the empty file2. `less` is used to allow users to view the content of a file, `command | less` allows user to see the output of a command.  
 
+<img width="784" height="172" alt="1b cat file" src="https://github.com/user-attachments/assets/6b22a304-d10a-4097-bfc0-ad63833785d8" />
+
+<img width="696" height="418" alt="1b less cmd" src="https://github.com/user-attachments/assets/e70ca0a7-5039-423e-a472-4a2f8ca77be2" />
+
+<img width="560" height="94" alt="image" src="https://github.com/user-attachments/assets/0a5ae45c-50b1-44af-abff-d437a6710f96" />
+
 
 `cp file1 copyfile1`makes a copy of file1 and name it copyfile1. `mv ` is used to move the file to another location. 
+
+<img width="830" height="432" alt="1b cp cmd copyfile1" src="https://github.com/user-attachments/assets/5f0212df-a77d-4dd8-b939-f2f84bed94d2" />
 
 
 Similarly, I have made a copy of copyfile1 first, then renamed it using `mv copyfile1 documents`. Then I used `mv copyfile1 /home/cweizhe/Downloads` to move the file into the Downloads directory of my VM. Afterwards, I use `rm file2` to delete file2. 
 
+<img width="804" height="450" alt="1b mv cmd rename file to documents" src="https://github.com/user-attachments/assets/6902d3f3-5d85-4b8c-bb56-284dae1afd51" />
 
+<img width="840" height="376" alt="1b mv cmd move location" src="https://github.com/user-attachments/assets/bb66c524-6605-4942-a767-ef3b849b306a" />
+
+<img width="780" height="490" alt="1b rm cmd del file" src="https://github.com/user-attachments/assets/283fbf48-c43c-43ba-a152-3c7935645153" />
 
 
 The command `uname –a` is used to display a summary of all available system information.  While `lsb_release –a` is used to display the available information about the Linux Standard Base. 
 
+<img width="822" height="350" alt="1b uname lsb release cmd" src="https://github.com/user-attachments/assets/6bf99a49-b24a-4a20-9add-a8e3496f5cc3" />
 
 
 `hostnamectl` show hostname and other system information of the current machine. 
+
+<img width="834" height="464" alt="1b hostnamectl cmdd" src="https://github.com/user-attachments/assets/245e8217-866f-4328-9f15-64df513fb746" />
+
 
 **Part 3: Super User and Permissions** 
 
