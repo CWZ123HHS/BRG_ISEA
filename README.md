@@ -860,11 +860,23 @@ Grammarly – For citation in APA style.
 	* NGINX or service config files 
 	* GitHub repo file structure 
 
+Amazon Elastic Compute Cloud (EC2) 
+
+Check DNS propagation: https://www.whatsmydns.net/ 
+
+Domain name creation: https://www.godaddy.com/  
+
+Student resources: https://alfalearn.sharepoint.com/sites/LEARN/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FLEARN%2FShared%20Documents%2Fe%2DKAPLAN%2FMU%2DISEABRG%2D27%2DIntroServer%2Fstudent&viewid=aa9b20ac%2Dff5e%2D4ca9%2D8748%2Defc070b33401&ga=1 
+
+VMware Workstation Pro 
+
+ubuntu-24.04.3-desktop-amd64.iso 
+
+ 
+
 (n.d.). 4 Benefits of Using the Cloud for Disaster Recovery. Arcserve. https://www.arcserve.com/blog/4-benefits-using-cloud-disaster-recovery 
 
 (n.d.). Access-control list. en.wikipedia.org/wiki/Access-control_list. https://en.wikipedia.org/wiki/Access-control_list 
-
-(2025, January 7). Challenge Types - Let's Encrypt Documentation. letsencrypt.org/docs/challenge-types/. https://letsencrypt.org/docs/challenge-types/ 
 
 (n.d.). Cron - Wikipedia. en.wikipedia.org/wiki/Cron. https://en.wikipedia.org/wiki/Cron 
 
@@ -873,9 +885,3 @@ Grammarly – For citation in APA style.
 (n.d.). How to Manage Linux Processes With htop. www.makeuseof.com/htop-linux-process-manage/. https://www.makeuseof.com/htop-linux-process-manage/ 
 
 (n.d.). User Guide — Certbot 5.1.0.dev0 documentation. eff-certbot.readthedocs.io/using.html. https://eff-certbot.readthedocs.io/using.html 
-
-
-
-
-
-
