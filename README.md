@@ -414,14 +414,32 @@ User privilege management grants the necessary permission to prevent misuse, pos
 
 I have created three new users, Alice, Bob and Mallory, a group, a directory and 10 test files. I then change the group ownership of the user group, added Alice and Bob into it. Then I set the directory permission to 770, only the owner and users from the group have the permission to read, write and execute the files and directory. 
 
+<img width="786" height="552" alt="1b user alice create" src="https://github.com/user-attachments/assets/86bf0adc-c67b-451a-8a56-9558d9a5ce4e" />
+
+<img width="744" height="526" alt="1b user bob create" src="https://github.com/user-attachments/assets/931388d3-0b5b-4688-a45f-9cdb03629dfa" />
+
+<img width="842" height="548" alt="1b user mallory create" src="https://github.com/user-attachments/assets/5b269677-f440-4601-af4a-b171f39a0148" />
+
+<img width="790" height="308" alt="1b create 10 file and usergrp" src="https://github.com/user-attachments/assets/d9f29277-1d73-4a80-91a6-e099a2f5a887" />
+
+<img width="864" height="100" alt="1b change user permission" src="https://github.com/user-attachments/assets/b3c350cc-35ad-4c18-b001-2304f8cf1999" />
 
 
 Then, I changed the permission to 750, removed Mallory from the user group. I will then test using the 3 users. Alice and Bob have full permission, but Mallory does not. Afterwards, I will delete the directory. 
 
+<img width="780" height="36" alt="1b bob rights change" src="https://github.com/user-attachments/assets/8dcacb09-8aa7-48f0-bd58-88bbccc7cacd" />
 
+<img width="812" height="104" alt="1b remove mallory from user" src="https://github.com/user-attachments/assets/ca15ae58-c08a-4171-ae7e-fc08f839bb58" />
 
+<img width="686" height="448" alt="1b alice rights" src="https://github.com/user-attachments/assets/ceb6e880-58c1-46d4-a6d5-a774cf222f5f" />
 
+<img width="700" height="424" alt="1b bob rights" src="https://github.com/user-attachments/assets/be35da7c-e879-4cfe-9153-9bf55212fba8" />
 
+<img width="696" height="200" alt="1b mallory rights" src="https://github.com/user-attachments/assets/d21fd04a-95bf-4373-a13a-e34017708a2b" />
+
+<img width="694" height="94" alt="1b del file" src="https://github.com/user-attachments/assets/69462bb1-218a-4c2c-9a5c-b77469714297" />
+
+<img width="694" height="94" alt="1b del file" src="https://github.com/user-attachments/assets/aa2108ce-ad04-4f5f-9e02-5d6ebbc1c81c" />
 
 
 **Lab 1b-2 reflection:**
